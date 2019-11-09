@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang='fr-FR'>
+<head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+<title>Talan Labs | Blog</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112601921-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40718882-5');
+</script>
+
+<link rel="icon" type="image/png" sizes="96x96" href='/img/favicon.png'>
+
+<link rel="canonical" href="https://blog.talanlabs.com/remplir-son-sprint-ou-garder-de-la-capa-pour-la-prod/">
+
+<link rel="stylesheet" href='/css/bootstrap.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/gaia.css' type='text/css'/>
+<link rel="stylesheet" href='/css/fontawesome.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/custom.css' type='text/css'/>
+
+<link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="content"><nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href='/'><img src='/img/logo_talanlabs_white_small.png' alt="Logo Talan Labs"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav float-right">
+        
+        <li><a href="/categories" target="_parent">Les Labs</a></li>
+        
+        <li><a href="/tags" target="_parent">#Tags</a></li>
+        
+        <li><a href="/authors" target="_parent">Les Auteurs</a></li>
+        
+        <li><a href="https://talan.com/metiers/labs" target="_parent">Talan Labs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="section section-header section-header-blog">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image: url('/work-in-progress.jpg')"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Remplir son sprint ou garder de la capa pour la prod ?</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Remplir son sprint ou garder de la capa pour la prod ?</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog">
+
+<p>Bien que l’ajout de tâches pendant le sprint n’est absolument pas conseillé, dans les faits les équipes y sont régulièrement confrontées. Dans ce cas comment accueillir ces tâches perturbatrices pour le sprint dans les meilleurs conditions ?</p>
+
+<p>Je connais deux écoles qui se confrontent sur la méthode; garder de la capacité libre dans le sprint, ou remplacer les éléments du sprint par ces nouveaux.</p>
+
+<h2 id="garder-de-la-capa-pour-la-prod">Garder de la capa pour la prod</h2>
+
+<p>Garder de la capa pour les incidents de production (ou pour n’importe quel type d’urgence), c’est choisir des éléments de backlog à embarquer dans le sprint tout en réservant une partie “vide” du backlog pour les imprévus.</p>
+
+<p><img src="free_capa.jpg" alt="Illustration d'un board avec de la place pour de nouvelles tâches" />
+De la place est laissée dans le backlog du sprint</p>
+
+<p>“On a une vélocité de 20 points par sprint, on prends 15 points d’US et on garde 5 points pour les incidents de prod”.</p>
+
+<p>Et les incidents de prod arrivants, les 5 points sont effectivement “dépensés” et souvent priorisé au maximum.</p>
+
+<p>Je suspecte même que certains bugs ou incidents sont estimés… pour rentrer dans cette capacité “tampon”, mais c’est parce que je vois le mal partout sûrement !</p>
+
+<h2 id="remplir-son-sprint">Remplir son sprint</h2>
+
+<p>Une autre façon de faire est de remplir son backlog de sprint normalement, avec ce que l’équipe pense pouvoir faire.</p>
+
+<p>Que se passe-t-il alors en cas d’imprévu ou d’incident à réparer d’urgence ?</p>
+
+<p><img src="replace_capa.jpg" alt="Illustration du remplacement de tâches sur un board" />
+Les nouvelles tâches peuvent trouver leur place et leur coût est visible</p>
+
+<p>C’est effectivement plus compliqué que dans le cas où de la capacité est réservée à l’avance, mais c’est pour la bonne cause.</p>
+
+<ol>
+<li><strong>L’impact de ces nouvelles tâches</strong> est alors visible. Comme la durée du sprint ne peut être étendue, une tractation est nécessaire pour échanger ces nouvelles tâches contre des tâches prévues, pour un total équivalent. On sait alors ce que l’ajout des tâches a coûté en terme de décalage de feature, on peut l’expliquer en revue de sprint.
+
+<ol>
+<li><strong>La priorisation des tâches ajoutées</strong> peut être discutée. En effet, en voyant que telle feature sera décalée, le PO peut choisir si la nouvelle tâche est vraiment prioritaire ou non. Corriger un bug qui coûte 500 € par jour tant qu’il est là en décalant une feature qui rapporte 1000 € par jour n’a pas de sens, tout comme corriger en urgence un bug touchant 1 utilisateur peut être moins prioritaire que d’ajouter une fonctionnalité améliorant la vie de dizaines de milliers d’autres utilisateurs.</li>
+</ol></li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Quoi que vous utilisiez ou que vous décidiez d&rsquo;utiliser avec votre équipe, l&rsquo;important est d&rsquo;avoir une bonne visibilité de l&rsquo;impact de <a href="https://const.fr/blog/agile/chasser-tache-perturbatrices-imprevues/">ces tâches indispensables mais néanmoins perturbatrices</a> pour le sprint, pour ne pas générer de <a href="https://const.fr/blog/agile/guide-shadow-velocity-pour-scrum-masters/">Shadow-Velocité</a> tout comme je conseillais déjà de <a href="https://const.fr/blog/agile/dette-technique-doit-elle-etre-comptabiliser-velocite/">visualiser clairement la dette technique</a>.</p>
+
+<p>Et vous, comment visualisez-vous l’impact des tâches ajoutées au sprint ? Est-ce que les incidents sont ajoutés en priorité haute aveuglément ?</p>
+<div class="separator separator-danger"><img src='/img/talan_star_small.png'
+                                                                 alt="Etoile Talan"/></div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 text-center right-column">
+                <h3 class="social-title"><i class="fas fa-calendar-alt"></i> Date</h3>
+                <time class="f6 mv4 dib tracked" datetime='2018-10-12T06:42:10Z'>
+                    Publié le 12 octobre 2018
+                </time>
+
+                <h3 class="social-title"><i class="fas fa-pen"></i> Auteur</h3>
+                <div class="author">
+    <div class="avatar avatar-danger">
+        
+        <img alt="Avatar Constantin GUAY" src='/img/constantin_guay.jpg'>
+        
+    </div>
+    <div class="description text-center">
+        <h3 class="big-text">
+            
+            Constantin GUAY
+            
+        </h3>
+        <p class="small-text">Coach Agile</p>
+    </div>
+    <div class="social-buttons">
+        
+        <a href="https://twitter.com/cog_g" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-twitter"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/constantinguay" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-linkedin"></i></a>
+        
+        
+    </div>
+</div>
+
+
+                <h3 class="social-title"><i class="fas fa-flask"></i> Lab</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/categories/lab-0'>Lab 0</a></div>
+
+
+                <h3 class="social-title"><i class="fas fa-hashtag"></i> Tags</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/tags/backlog'>#backlog</a>
+    <a class="badge badge-light" href='/tags/scrum'>#Scrum</a></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-comments"></i> Commentaires</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "labs-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-forward"></i> Vous aimerez peut-être...</h3>
+        <div class="card-deck">
+        
+            <a href="/scrum-tips-differences-entre-epiques-histoires-themes-fonctionnalites/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab 0</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Scrum tips: Différences entre épiques, histoires, …</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Constantin GUAY</strong>,
+            <time class="post-date" datetime='2018-02-20T15:31:46Z'>
+                le 20 février 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Une histoire compliquée &hellip; N&rsquo;avez-vous jamais été troublé par l&rsquo;utilisation faite des termes comme « épiques » ou « fonctionnalités » ?</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">backlog</span>
+    <span class="badge badge-light">epiques</span>
+    <span class="badge badge-light">Scrum</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/estimons-lestimation-part-1-la-liste-de-course/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab 0</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Estimons l’estimation part 1 : la liste de course</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Constantin GUAY</strong>,
+            <time class="post-date" datetime='2018-09-10T15:26:32Z'>
+                le 10 septembre 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Il y a un vrai débat au sein de la communauté agile sur la pertinence des estimations et principalement de ce qu’il en est fait.</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">estimations</span>
+    <span class="badge badge-light">Scrum</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/sprint-une-semaine/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab 0</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Devez-vous passer au Sprint d’une semaine ?</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Constantin GUAY</strong>,
+            <time class="post-date" datetime='2018-04-20T14:04:20Z'>
+                le 20 avril 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Habitué comme beaucoup aux sprints de deux semaines, j’ai pu me rendre compte de l’impact qu’un sprint d’une semaine peut avoir sur le produit et sur l’équipe.</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">Scrum</span>
+    <span class="badge badge-light">semaine</span>
+    <span class="badge badge-light">sprint</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+        </div>
+        
+    </div>
+</div>
+
+</div><footer class="footer footer-big footer-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Les Labs de Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href='/categories/lab-0'><i class="fas fa-flask"></i> Lab Agilité</a></li>
+                            <li><a href='/categories/lab-k'><i class="fas fa-flask"></i> Lab Blockchain</a></li>
+                            <li><a href='/categories/lab-v'><i class="fas fa-flask"></i> Lab DevOps</a></li>
+                            <li><a href='/categories/lab-9'><i class="fas fa-flask"></i> Lab Bootcamp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Talan Labs</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/TalanLabs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talanlabs/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://talan.com/metiers/labs/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                            <li><a href="https://www.welcometothejungle.co/fr/companies/talanlabs/" target="_blank"><i class="fas fa-briefcase"></i> Welcome to the Jungle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Le groupe Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/talan_fr" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/talan/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://talan.com/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2019 - Le Blog des Labs de Talan</div>
+    </div>
+</footer>
+</body>
+
+
+<script type="text/javascript" src='/js/jquery.min.js'></script>
+<script type="text/javascript" src='/js/bootstrap.min.js'></script>
+
+
+<script type="text/javascript" src='/js/modernizr.js'></script>
+
+<script type="text/javascript" src='/js/fontawesome.min.js'></script>
+
+
+<script type="text/javascript" src='/js/gaia.js'></script>
+
+<script type="text/javascript" src='/js/custom.js'></script>
+</html>

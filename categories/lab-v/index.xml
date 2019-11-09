@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab V on Talan Labs | Blog</title>
+    <link>https://blog.talanlabs.com/categories/lab-v/</link>
+    <description>Recent content in Lab V on Talan Labs | Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>© 2019 - Le Blog des Labs de Talan</copyright>
+    <lastBuildDate>Wed, 27 Mar 2019 19:55:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.talanlabs.com/categories/lab-v/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lego4DevOps</title>
+      <link>https://blog.talanlabs.com/lego4devops/</link>
+      <pubDate>Wed, 27 Mar 2019 19:55:37 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/lego4devops/</guid>
+      <description>Parce qu&amp;rsquo;il n&amp;rsquo;y a pas que les coachs agiles qui ont le droit de vous faire jouer au Lego</description>
+    </item>
+    
+    <item>
+      <title>Juin, le mois pour construire le futur du Cloud</title>
+      <link>https://blog.talanlabs.com/juin-mois-futur-du-cloud/</link>
+      <pubDate>Mon, 20 Aug 2018 11:48:45 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/juin-mois-futur-du-cloud/</guid>
+      <description>Vous vous êtes peut-être rendu compte que les Géants &amp;ldquo;Cloud Providers&amp;rdquo; se sont posés au mois de Juin 2018 à Paris pour leurs grandes messes annuelles.</description>
+    </item>
+    
+    <item>
+      <title>Paris Container Day 2018</title>
+      <link>https://blog.talanlabs.com/pariscontainerday2018/</link>
+      <pubDate>Wed, 08 Aug 2018 09:55:32 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/pariscontainerday2018/</guid>
+      <description>Paris Container Day 2018 Ce mardi 26 Juin se tenait à Paris, au pied de la Tour Eiffel, la troisième édition du Paris Container Day (https://paris-container-day.</description>
+    </item>
+    
+    <item>
+      <title>VIM c&#39;est bien mais je préfère VSCode ! Merci X11 Forwarding</title>
+      <link>https://blog.talanlabs.com/vim-cest-bien-mais-vscode/</link>
+      <pubDate>Mon, 09 Jul 2018 19:54:59 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/vim-cest-bien-mais-vscode/</guid>
+      <description>Il nous arrive très souvent de devoir écrire des scripts ou bien du code directement sur les machines virtuelles de développement (parce que notre système d&amp;rsquo;exploitation ne supporte pas Docker&amp;hellip; par exemple).</description>
+    </item>
+    
+    <item>
+      <title>CRiP : Club des Responsables de l’Infrastructure et de Production</title>
+      <link>https://blog.talanlabs.com/crip-club-responsables-infra-prod/</link>
+      <pubDate>Mon, 02 Jul 2018 19:52:51 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/crip-club-responsables-infra-prod/</guid>
+      <description>J&amp;rsquo;ai eu l&amp;rsquo;occasion de connaitre le CRiP par l&amp;rsquo;intermédiaire de l&amp;rsquo;un de mes clients où j&amp;rsquo;opère en mission en ce moment.</description>
+    </item>
+    
+    <item>
+      <title>Le chaos engineering</title>
+      <link>https://blog.talanlabs.com/le-chaos-engineering/</link>
+      <pubDate>Fri, 22 Jun 2018 06:00:02 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/le-chaos-engineering/</guid>
+      <description>_Cet article s’insère dans notre série « Chaos Engineering ».</description>
+    </item>
+    
+    <item>
+      <title>Le Guide de survie de OWASP 2017 (pour nos pipelines de CI/CD)</title>
+      <link>https://blog.talanlabs.com/owasp-2017-pour-nos-pipelines/</link>
+      <pubDate>Mon, 11 Jun 2018 06:42:07 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/owasp-2017-pour-nos-pipelines/</guid>
+      <description>Le choix des méthodes agiles est désormais dans les moeurs de la plupart de nos clients.</description>
+    </item>
+    
+    <item>
+      <title>DEVOPS NIGHT #3 : le meta-meetup DevOps</title>
+      <link>https://blog.talanlabs.com/devops-night-3-le-meta-meetup-devops/</link>
+      <pubDate>Mon, 04 Jun 2018 11:51:48 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/devops-night-3-le-meta-meetup-devops/</guid>
+      <description>Cet article s’insère dans notre série « Chaos Engineering ».</description>
+    </item>
+    
+    <item>
+      <title>Retour sur la conférence DevOpsRex 2017</title>
+      <link>https://blog.talanlabs.com/conference-devopsrex-2017/</link>
+      <pubDate>Fri, 06 Oct 2017 10:03:31 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/conference-devopsrex-2017/</guid>
+      <description>Le 2 Octobre 2017 s&amp;rsquo;est tenu la seconde édition du DevOpsRex à Paris dans la mythique salle du Grand Rex.</description>
+    </item>
+    
+    <item>
+      <title>Jenkins Community Day Paris 2017</title>
+      <link>https://blog.talanlabs.com/jenkins-community-day-paris-2017/</link>
+      <pubDate>Tue, 18 Jul 2017 07:34:31 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/jenkins-community-day-paris-2017/</guid>
+      <description>Les grenouilles de JFrog Artifactory ont organisé le 11 Juillet 2017 le Jenkins Community Day à Paris.</description>
+    </item>
+    
+    <item>
+      <title>Revivez la conférence microservices de Talan Labs lors de Devoxx 2017</title>
+      <link>https://blog.talanlabs.com/conference-microservices-devoxx/</link>
+      <pubDate>Thu, 04 May 2017 07:05:09 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/conference-microservices-devoxx/</guid>
+      <description>La vidéo de la conférence microservices TalanLabs réalisée pendant Devoxx 2017 est en ligne !</description>
+    </item>
+    
+    <item>
+      <title>Les microservices pour une architecture orientée web n°6</title>
+      <link>https://blog.talanlabs.com/microservices-partie-6-points-essentiels/</link>
+      <pubDate>Mon, 27 Mar 2017 07:07:09 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/microservices-partie-6-points-essentiels/</guid>
+      <description>5 points essentiels à comprendre pour s’initier aux microservices _Cet article s’insère dans la série « microservices » écrite par François Berthault dans le cadre de la participation de Talan Labs à Devoxx 2017, du 5 au 7 avril prochains au Palais des Congrès de Paris.</description>
+    </item>
+    
+    <item>
+      <title>Les microservices pour une architecture orientée web n°5</title>
+      <link>https://blog.talanlabs.com/microservices-partie-5-spring-cloud/</link>
+      <pubDate>Thu, 23 Mar 2017 08:48:12 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/microservices-partie-5-spring-cloud/</guid>
+      <description>Spring Cloud, le couteau suisse des microservices _Cet article s’insère dans la série « microservices » écrite par François Berthault dans le cadre de la participation de Talan Labs à _Devoxx 2017, du 5 au 7 avril prochains au Palais des Congrès de Paris.</description>
+    </item>
+    
+    <item>
+      <title>Les microservices pour une architecture orientée web n°4</title>
+      <link>https://blog.talanlabs.com/microservices-partie-4-spring-boot/</link>
+      <pubDate>Tue, 14 Mar 2017 08:21:08 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/microservices-partie-4-spring-boot/</guid>
+      <description>Simple comme Spring Boot _Cet article s’insère dans la série « microservices » écrite par François Berthault dans le cadre de la participation de Talan Labs à _Devoxx 2017, du 5 au 7 avril prochains au Palais des Congrès de Paris.</description>
+    </item>
+    
+    <item>
+      <title>Les microservices pour une architecture orientée web n°3</title>
+      <link>https://blog.talanlabs.com/architecture-microservices-partie-3-organisation/</link>
+      <pubDate>Mon, 06 Mar 2017 08:48:03 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/architecture-microservices-partie-3-organisation/</guid>
+      <description>Organisation des équipes pour un projet d’architecture en microservices Cet article s&amp;rsquo;insère dans la série &amp;ldquo;microservices&amp;rdquo; écrite par François Berthault dans le cadre de la participation de Talan Labs à Devoxx 2017, du 5 au 7 avril prochains au Palais des Congrès de Paris.</description>
+    </item>
+    
+    <item>
+      <title>Les microservices pour une architecture orientée web n°2</title>
+      <link>https://blog.talanlabs.com/architecture-microservices-partie-2-changement-point-de-vue/</link>
+      <pubDate>Mon, 27 Feb 2017 12:46:03 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/architecture-microservices-partie-2-changement-point-de-vue/</guid>
+      <description>Un changement de point de vue Cet article s&amp;rsquo;insère dans la série &amp;ldquo;microservices&amp;rdquo; écrite par François Berthault dans le cadre de la participation de Talan Labs à Devoxx 2017, du 5 au 7 avril prochains au Palais des Congrès de Paris.</description>
+    </item>
+    
+    <item>
+      <title>Les microservices pour une architecture orientée web n°1</title>
+      <link>https://blog.talanlabs.com/architecture-microservices-partie-1-definitions/</link>
+      <pubDate>Tue, 21 Feb 2017 09:09:17 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/architecture-microservices-partie-1-definitions/</guid>
+      <description>Définitions et caractéristiques Cet article s&amp;rsquo;insère dans la série &amp;ldquo;microservices&amp;rdquo; écrite par François Berthault dans le cadre de la participation de Talan Labs à Devoxx 2017, du 5 au 7 avril prochains au Palais des Congrès de Paris.</description>
+    </item>
+    
+  </channel>
+</rss>

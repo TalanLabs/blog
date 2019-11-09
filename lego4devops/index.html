@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang='fr-FR'>
+<head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+<title>Talan Labs | Blog</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112601921-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40718882-5');
+</script>
+
+<link rel="icon" type="image/png" sizes="96x96" href='/img/favicon.png'>
+
+<link rel="canonical" href="https://blog.talanlabs.com/lego4devops/">
+
+<link rel="stylesheet" href='/css/bootstrap.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/gaia.css' type='text/css'/>
+<link rel="stylesheet" href='/css/fontawesome.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/custom.css' type='text/css'/>
+
+<link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="content"><nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href='/'><img src='/img/logo_talanlabs_white_small.png' alt="Logo Talan Labs"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav float-right">
+        
+        <li><a href="/categories" target="_parent">Les Labs</a></li>
+        
+        <li><a href="/tags" target="_parent">#Tags</a></li>
+        
+        <li><a href="/authors" target="_parent">Les Auteurs</a></li>
+        
+        <li><a href="https://talan.com/metiers/labs" target="_parent">Talan Labs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="section section-header section-header-blog">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image: url('/work-in-progress.jpg')"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Lego4DevOps</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Lego4DevOps</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog">
+
+<blockquote>
+<p>Parce qu&rsquo;il n&rsquo;y a pas que les coachs agiles qui ont le droit de vous faire jouer au Lego</p>
+</blockquote>
+
+<p>Le <a href="https://lego4devops.github.io">Lego4Devops</a>, c&rsquo;est un jeux ludique qui repousse les frontières entre les &ldquo;Dev&rdquo; et les &ldquo;Ops&rdquo;. Une sorte de team-building léger qui prend soin d&rsquo;explorer les dysfonctionnements entre ces 2 populations. Voilà pourquoi vous devriez regarder ce &ldquo;serious-game&rdquo;.</p>
+
+<p>À porte de la Villette, je coache des équipes IT dans leurs transformations DevOps, et je constate un problème récurent, avec la sensation d’avoir manqué quelque chose.</p>
+
+<p>Mes tentatives avaient toutes échouées, l&rsquo;absence de collaboration entre les dev et les ops persistait&hellip; je manquais d&rsquo;idées et commençais à perdre espoir.</p>
+
+<p>C’est en revenant d&rsquo;un atelier de sensibilisation au TDD qu&rsquo;une idée m&rsquo;est venue :  rechercher un atelier pour aborder <strong>mes</strong> problématiques.</p>
+
+<h3 id="lego4devops">Lego4DevOps !</h3>
+
+<p>Là, comme des enfants (avec les autres coachs de mon équipe), ce fut l&rsquo;illumination ! On a traversé la rue pour acheter une boite de Lego dans le magasin de jouets. Et c&rsquo;était parti !</p>
+
+<p><img src="/IMG-20190315-WA0004-e1553717584210.jpg" alt="" /></p>
+
+<p>À peine revenus, on a imprimé les règles (<a href="https://lego4devops.github.io/#supports">https://lego4devops.github.io/#supports</a>) et trouvé une grande table pour expérimenter ce qui allait devenir notre atelier le plus populaire.</p>
+
+<h3 id="lego4devops-qu-est-ce-que-c-est-déjà">Lego4DevOps, qu’est ce que c’est déjà ?</h3>
+
+<p>Le Lego4DevOps, c&rsquo;est simple : un atelier ludique à base de Lego, un peu conceptuel, créé par Sébastien Fauvel, Cécile Especel et Didier Drouin, et mis à disposition selon les termes de la licence Creative Commons Attribution ­ Partage. L&rsquo;initiative était sympa, on se doit de les en remercier.</p>
+
+<p>Sauf qu’en réalité, Lego4Devops s’inspire (aussi) pour le nom et pour le matériel du jeu Lego4Scrum, créé par Alexey Krivitsky (<a href="http://www.lego4scrum.com/">http://www.lego4scrum.com/</a>).</p>
+
+<p>Mais comme nous sommes de grands enfants, c’est anecdotique dans l’univers des &ldquo;serious game&rdquo;, ce qui importe c&rsquo;est de partager.</p>
+
+<h3 id="de-quoi-parle-lego4devops">De quoi parle Lego4DevOps ?</h3>
+
+<p>Une première équipe prénommée &ldquo;Les devs&rdquo; a pour mission de construire un produit à base de Lego durant cinq itérations (aka sprints). Lorsqu’elle reçoit des specs, elle s&rsquo;y attèle puis envoie un messager pour délivrer ses features à la seconde équipe nommée &ldquo;les ops&rdquo;, qui a pour mission de mettre en production et de s&rsquo;assurer que la plateforme soit toujours disponible.</p>
+
+<p><img src="/20190222_145552-e1553717206828.jpg" alt="" />
+Qu’y a-t-il comme intérêt ? C’est que les règles évolues. Mais tous sont loin de se douter que le client donne une note à ce qui a été livré…</p>
+
+<p>Le point commun de ces Devs et ces Ops c&rsquo;est qu&rsquo;ils opèrent tous sur le même produit, mais ne prennent pas en considération les problématiques de l&rsquo;autre. Ils ont tous des objectifs d&rsquo;équipes, non partagés et surtout des contraintes différentes.</p>
+
+<p>Sur le papier, Lego4DevOps est une série d&rsquo;itération qui amène à réfléchir progressivement à comment travailler plus efficacement en respectant les contraintes de chacun.</p>
+
+<p>Lego4DevOps, c’est un jeu &ldquo;brillantissime&rdquo;, hyper bien pensé, qui mérite d&rsquo;être connu par le plus grand nombre possible.</p>
+
+<h3 id="lego4devops-amusement-ou-sérieux">Lego4DevOps, amusement ou sérieux ?</h3>
+
+<p>Bien sûr, les créateurs ne se sont pas contentés de donner une liste de features à assembler, le réalisme est entier avec des managers d&rsquo;équipes en charge du reporting. Ce jeu flirte avec un &ldquo;ice-breaker&rdquo; pour devenir un réel atelier d&rsquo;amélioration continue. C’est l’histoire de deux équipes, qui pour évoluer d’une situation à l’autre, doivent… collaborer (si je simplifie à l’extrême).</p>
+
+<p><img src="/Sans-titre.png" alt="" />
+Ce qui devait arriver, arriva. L&rsquo;atelier, répété minutieusement par notre équipe de coachs, plait énormément aux équipes qui se laissent prendre au jeu du Lego4DevOps.</p>
+
+<p>Chaque itération du Lego4DevOps fait naître une situation différente, raconte à elle seule une problématique concrète et réaliste que vivent nos équipes au quotidien. C’est un enchainement de situations, tellement réaliste qui joue sur les émotions pour sensibiliser les équipes à partager leurs objectifs et leurs contraintes.</p>
+
+<h3 id="quel-bilan-pour-lego4devops">Quel bilan pour Lego4DevOps ?</h3>
+
+<p><img src="/retro.jpg" alt="" />
+Rétrospectivement, c&rsquo;est unanime, les avis sont à chaque fois identiques. Une équipe pluridisciplinaire et autonome, il n&rsquo;y a rien de mieux. Devs et Ops, dont la mission est devenue de satisfaire le client (et oui), repartent travailler avec l&rsquo;idée de trouver le compromis idéal pour enfin collaborer dans la vrai vie !</p>
+
+<p>Ensemble, ils ont réussi à percer deux mystères : la collaboration, malgré les contraintes, et la satisfaction du client par la livraison de valeurs métiers.</p>
+
+<p>Lego4DevOps se fait analyste des problématiques organisationnelles du monde de l&rsquo;IT en général. C’est probablement pour cette raison qu’ils ont mis si longtemps à délivrer de la valeur ;)</p>
+
+<p>En Bref, on a adoré et j&rsquo;espère que vous allez aussi adorer le <a href="https://lego4devops.github.io">Lego4DevOps</a></p>
+<div class="separator separator-danger"><img src='/img/talan_star_small.png'
+                                                                 alt="Etoile Talan"/></div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 text-center right-column">
+                <h3 class="social-title"><i class="fas fa-calendar-alt"></i> Date</h3>
+                <time class="f6 mv4 dib tracked" datetime='2019-03-27T19:55:37Z'>
+                    Publié le 27 mars 2019
+                </time>
+
+                <h3 class="social-title"><i class="fas fa-pen"></i> Auteur</h3>
+                <div class="author">
+    <div class="avatar avatar-danger">
+        
+        <img alt="Avatar François BERTHAULT" src='/img/francois_berthault.jpg'>
+        
+    </div>
+    <div class="description text-center">
+        <h3 class="big-text">
+            
+            François BERTHAULT
+            
+        </h3>
+        <p class="small-text">Coach DevOps</p>
+    </div>
+    <div class="social-buttons">
+        
+        <a href="https://twitter.com/fanfansama" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-twitter"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/fran%c3%a7ois-berthault-491a5850" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-linkedin"></i></a>
+        
+        
+    </div>
+</div>
+
+
+                <h3 class="social-title"><i class="fas fa-flask"></i> Lab</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/categories/lab-v'>Lab V</a></div>
+
+
+                <h3 class="social-title"><i class="fas fa-hashtag"></i> Tags</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/tags/devops'>#DevOps</a>
+    <a class="badge badge-light" href='/tags/lego'>#lego</a></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-comments"></i> Commentaires</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "labs-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-forward"></i> Vous aimerez peut-être...</h3>
+        <div class="card-deck">
+        
+            <a href="/vim-cest-bien-mais-vscode/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab V</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">VIM c&#39;est bien mais je préfère VSCode ! Merci X11 …</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>François BERTHAULT</strong>,
+            <time class="post-date" datetime='2018-07-09T19:54:59Z'>
+                le 9 juillet 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Il nous arrive très souvent de devoir écrire des scripts ou bien du code directement sur les machines virtuelles de développement (parce que notre système d&rsquo;exploitation ne …</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">vscode</span>
+    <span class="badge badge-light">x11</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/owasp-2017-pour-nos-pipelines/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab V</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Le Guide de survie de OWASP 2017 (pour nos …</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>François BERTHAULT</strong>,
+            <time class="post-date" datetime='2018-06-11T06:42:07Z'>
+                le 11 juin 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Le choix des méthodes agiles est désormais dans les moeurs de la plupart de nos clients.</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">secdevops</span>
+    <span class="badge badge-light">sécurité</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/devops-night-3-le-meta-meetup-devops/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab V</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">DEVOPS NIGHT #3 : le meta-meetup DevOps</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>François BERTHAULT</strong>,
+            <time class="post-date" datetime='2018-06-04T11:51:48Z'>
+                le 4 juin 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Cet article s’insère dans notre série « Chaos Engineering ».</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">chaos engineering</span>
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">meetup</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+        </div>
+        
+    </div>
+</div>
+
+</div><footer class="footer footer-big footer-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Les Labs de Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href='/categories/lab-0'><i class="fas fa-flask"></i> Lab Agilité</a></li>
+                            <li><a href='/categories/lab-k'><i class="fas fa-flask"></i> Lab Blockchain</a></li>
+                            <li><a href='/categories/lab-v'><i class="fas fa-flask"></i> Lab DevOps</a></li>
+                            <li><a href='/categories/lab-9'><i class="fas fa-flask"></i> Lab Bootcamp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Talan Labs</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/TalanLabs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talanlabs/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://talan.com/metiers/labs/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                            <li><a href="https://www.welcometothejungle.co/fr/companies/talanlabs/" target="_blank"><i class="fas fa-briefcase"></i> Welcome to the Jungle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Le groupe Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/talan_fr" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/talan/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://talan.com/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2019 - Le Blog des Labs de Talan</div>
+    </div>
+</footer>
+</body>
+
+
+<script type="text/javascript" src='/js/jquery.min.js'></script>
+<script type="text/javascript" src='/js/bootstrap.min.js'></script>
+
+
+<script type="text/javascript" src='/js/modernizr.js'></script>
+
+<script type="text/javascript" src='/js/fontawesome.min.js'></script>
+
+
+<script type="text/javascript" src='/js/gaia.js'></script>
+
+<script type="text/javascript" src='/js/custom.js'></script>
+</html>

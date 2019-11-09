@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang='fr-FR'>
+<head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+<title>Talan Labs | Blog</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112601921-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40718882-5');
+</script>
+
+<link rel="icon" type="image/png" sizes="96x96" href='/img/favicon.png'>
+
+<link rel="canonical" href="https://blog.talanlabs.com/devops-night-3-le-meta-meetup-devops/">
+
+<link rel="stylesheet" href='/css/bootstrap.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/gaia.css' type='text/css'/>
+<link rel="stylesheet" href='/css/fontawesome.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/custom.css' type='text/css'/>
+
+<link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="content"><nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href='/'><img src='/img/logo_talanlabs_white_small.png' alt="Logo Talan Labs"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav float-right">
+        
+        <li><a href="/categories" target="_parent">Les Labs</a></li>
+        
+        <li><a href="/tags" target="_parent">#Tags</a></li>
+        
+        <li><a href="/authors" target="_parent">Les Auteurs</a></li>
+        
+        <li><a href="https://talan.com/metiers/labs" target="_parent">Talan Labs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="section section-header section-header-blog">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image: url('/work-in-progress.jpg')"></div>
+        <div class="container">
+            <div class="content">
+                <h1>DEVOPS NIGHT #3 : le meta-meetup DevOps</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>DEVOPS NIGHT #3 : le meta-meetup DevOps</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog">
+
+<p><em>Cet article s’insère dans notre série « Chaos Engineering ».</em></p>
+
+<h1 id="le-meta-meetup-devops">Le meta-meetup DevOps</h1>
+
+<p>Le jeudi 31 Mai 2018 s&rsquo;est tenu le méta-meetup &ldquo;DevOps Night #3&rdquo; au sein des tours de la Société Générale à la Défense. Cette réunion était conjointement organisée par 4 grands meetup parisiens autour d&rsquo;un même sujet : &ldquo;le DevOps&rdquo;.</p>
+
+<ul>
+<li>Docker Paris (<a href="https://www.meetup.com/Docker-Paris/">www.meetup.com/Docker-Paris/</a>)
+
+<ul>
+<li>Kubernetes Paris (<a href="https://www.meetup.com/Kubernetes-Paris/">www.meetup.com/Kubernetes-Paris/</a>)</li>
+<li>Paris Serverless Architecture Meetup (<a href="https://www.meetup.com/Paris-Serverless-Architecture-Meetup/">www.meetup.com/Paris-Serverless-Architecture-Meetup/</a>)</li>
+<li>Paris Chaos Engineering Meetup (<a href="https://www.meetup.com/Paris-Chaos-Engineering-Meetup/">www.meetup.com/Paris-Chaos-Engineering-Meetup/</a>)</li>
+</ul></li>
+</ul>
+
+<p><img src="/docker-paris.png" alt="" />
+ <img src="/kub.png" alt="" />
+ <img src="/serverless.png" alt="" />
+<img src="/choas.png" alt="" /></p>
+
+<h2 id="la-keynote-chaos-isn-t-a-pit-chaos-is-a-ladder">La Keynote : Chaos isn&rsquo;t a pit, Chaos is a ladder</h2>
+
+<p>Pour cette troisième édition, la keynote a été réalisé par la dernière communauté à avoir rejoint le méta-meetup, je veux parler des animateurs du meetup &ldquo;Chaos Engineering&rdquo; : Christophe Rochefolle (<a href="https://twitter.com/crochefolle?lang=fr">@crochefolle</a>) et Benjamin Gakik (<a href="https://twitter.com/BenjaminGakic?lang=fr">@BenjaminGakic</a>).</p>
+
+<p>Comme à leurs habitudes, les deux &ldquo;Chaos Engineer&rdquo; de oui.sncf, on le chic pour attirer l&rsquo;attention aussi bien des Dev que des Ops autour de leurs activités préférées : &ldquo;semer volontairement le chaos dans une production informatique&rdquo;</p>
+
+<blockquote>
+<p>Le Chaos Engineering est la discipline de l&rsquo;expérimentation sur un système distribué afin de renforcer la confiance dans la capacité du système à résister à des conditions turbulentes en production [wikipedia &amp; <a href="http://principlesofchaos.org">principlesofchaos.org</a>]</p>
+</blockquote>
+
+<p>Heureusement, leurs définitions et leurs présentations sont largement plus &ldquo;friendly&rdquo; que la définition de Wikipédia. Parce que (franchement) qui trouve le suivi de production intéressant ??. Je dirais tout ceux qui ont déjà vu la présentation de Christophe et Benjamin par exemple à Devoxx ou à DevopsRex (<a href="https://www.youtube.com/watch?v=Z4mRJm3OVvI">sur YouTube</a>). Et pourquoi pas vous, si vous ne les avez jamais rencontrés ?</p>
+
+<p><a href="kaos.jpeg"><img src="/kaos.jpeg" alt="" />
+</a></p>
+
+<p>Ma citation préférée de cette keynote est tirée d&rsquo;un ouvrage de <strong>Chaos Engineering, Building Confidence in System Behavior through Experiments</strong> (ebook disponible : <a href="https://www.oreilly.com/webops-perf/free/chaos-engineering.csp">https://www.oreilly.com/webops-perf/free/chaos-engineering.csp</a>)</p>
+
+<blockquote>
+<p>“<strong>Introducing Chaos is not the best way to meet your new colleagues, though it is the fastest.</strong>” Nora Jones (<a href="https://twitter.com/nora_js?lang=fr">@nora_js</a>)</p>
+</blockquote>
+
+<h2 id="4-meetups-un-seul-choix-possible">4 Meetups, un seul choix possible</h2>
+
+<p>Comme c&rsquo;est un meta-meetup, il y avait donc un choix à faire entre l&rsquo;une des 4 associations. A l&rsquo;image d&rsquo;un hackathon, chacun leur tour a fait un &ldquo;pitch&rdquo; pour attirer évidement le plus de monde. Voici ce qu&rsquo;il y avait au programme de la soirée :</p>
+
+<ul>
+<li>la communauté Docker proposait sur le thème de &ldquo;Container everywhere&rdquo; un tour d&rsquo;horizon des nouveautés sur les containers dans Azure
+
+<ul>
+<li>pour Kubernetes, vous étiez convié à déployer et maintenir un Kubernetes sur le long terme et sur un BareMetal avec kubespray (<a href="http://kubespray.io/">http://kubespray.io/</a>)</li>
+<li>le GDG (Google Developper Group) et la communauté serverless proposait une présentation de la solution Serverless de google : les Cloud Functions (<a href="https://cloud.google.com/functions/">https://cloud.google.com/functions/</a>)</li>
+<li>un workshop Choas Engineering, un atelier interactif et colaboratif qui avait pour thème &ldquo;Incident &amp; Experimentation&rdquo;</li>
+</ul></li>
+</ul>
+
+<h2 id="meetup-chaos-engineering-5-incident-experimentation">Meetup Chaos Engineering #5 : Incident &amp; Experimentation</h2>
+
+<p>Pour ce cinquième rendez-vous, ils nous ont invité dans les coulisses de l&rsquo;organisation d&rsquo;un jeu qui s&rsquo;appelle le &ldquo;day of chaos&rdquo;. Les règles sont assez simples : &ldquo;Toutes les 30 minutes, des exploitants (ou OPS) simulaient des pannes en pré-production. Les équipes de DEV obtenaient des points en fonction des détections, des diagnostics et des résolutions&rdquo;. Ce type d’événement gamifié permet d’initier les équipes de développement au concept de résilience et au suivi de production.</p>
+
+<p><a href="20180531_203829.jpg"><img src="/20180531_203829.jpg" alt="" />
+</a>Nous avons donc été mis dans la peau des exploitants qui doivent trouver des pannes à proposer à nos équipes de DEV. On a donc travaillé sur des pannes réelles et sérieuses qui sont apparues chez les participants.</p>
+
+<p>Le déroulement est assez simple : en petit groupes de travail, on a commencé par identifier une panne qui a causé de gros problèmes parce que l&rsquo;application n&rsquo;était pas assez résiliente. Pour nos incidents, il a fallu remplir un premier template. On a donné un &ldquo;petit nom&rdquo; à nos pannes parce que c&rsquo;est tout de suite plus amusant de travailler sur &ldquo;VM Vampire&rdquo; que sur &ldquo;une VM consomme toute les ressources et reboote en boucle&rdquo;. On a détaillé le contexte, l&rsquo;environnement technique, les actions qui avaient été prise à la suite de la panne et indiqué si oui ou non nous l&rsquo;avions résolu.</p>
+
+<p><a href="Screenshot_20180601-115711.png"><img src="/Screenshot_20180601-115711.png" alt="" />
+</a></p>
+
+<p>Dans l&rsquo;état d&rsquo;esprit du Chaos Engineering, il faut expérimenter la panne à reproduire ! Alors, ce fut la seconde étape &ldquo;Expérimentation&rdquo;. Toujours sur le même principe, un petit groupe découvre la panne et propose une action à mettre en place. Nous avons commencé par la base : avoir un but, savoir qui sera impacté ? Quoi mesurer et comment le monitorer. On a également pris en compte la cible et le résultat attendu car toutes actions doivent avoir une raison valable ! Le chaos engineering ce n&rsquo;est pas seulement pour s&rsquo;amuser à démolir un système informatique, c&rsquo;est trouver les solutions pour devenir tolérant aux pannes <img src="Screenshot_20180601-115841.png" alt="![](/Screenshot_20180601-115841.png)
+" /></p>
+
+<p>Comme toute les bonnes choses ont une fin, on a fait un tour de table pour présenter les &ldquo;Incidents &amp; expérimentations&rdquo; des tous les groupes de travail. Si vous voulez la synthèse, venez les voir au prochain meetup Chaos Engineering.</p>
+
+<h2 id="suivez-les">Suivez-les&hellip;</h2>
+
+<p>Vous pouvez les retrouver à Agile France le 15 et 16 juin ou lors du prochain meetup de Septembre pour parler des patterns de résilliance! Il y a également un groupe sur Medium à suivre (<a href="https://medium.com/paris-chaos-engineering-community">https://medium.com/paris-chaos-engineering-community</a>) et un slack (<a href="https://days-of-chaos.slack.fr/">https://days-of-chaos.slack.fr</a>)</p>
+
+<p><em>Vous avez aimé cet article ? Découvrez ou redécouvrez l’autre épisode de la série « Chaos Engineering » :</em></p>
+
+<p>Le chaos engineering (<a href="https://blog.talanlabs.com/le-chaos-engineering/">https://blog.talanlabs.com/le-chaos-engineering/</a>)</p>
+<div class="separator separator-danger"><img src='/img/talan_star_small.png'
+                                                                 alt="Etoile Talan"/></div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 text-center right-column">
+                <h3 class="social-title"><i class="fas fa-calendar-alt"></i> Date</h3>
+                <time class="f6 mv4 dib tracked" datetime='2018-06-04T11:51:48Z'>
+                    Publié le 4 juin 2018
+                </time>
+
+                <h3 class="social-title"><i class="fas fa-pen"></i> Auteur</h3>
+                <div class="author">
+    <div class="avatar avatar-danger">
+        
+        <img alt="Avatar François BERTHAULT" src='/img/francois_berthault.jpg'>
+        
+    </div>
+    <div class="description text-center">
+        <h3 class="big-text">
+            
+            François BERTHAULT
+            
+        </h3>
+        <p class="small-text">Coach DevOps</p>
+    </div>
+    <div class="social-buttons">
+        
+        <a href="https://twitter.com/fanfansama" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-twitter"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/fran%c3%a7ois-berthault-491a5850" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-linkedin"></i></a>
+        
+        
+    </div>
+</div>
+
+
+                <h3 class="social-title"><i class="fas fa-flask"></i> Lab</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/categories/lab-v'>Lab V</a></div>
+
+
+                <h3 class="social-title"><i class="fas fa-hashtag"></i> Tags</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/tags/chaos-engineering'>#chaos engineering</a>
+    <a class="badge badge-light" href='/tags/devops'>#DevOps</a>
+    <a class="badge badge-light" href='/tags/meetup'>#meetup</a></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-comments"></i> Commentaires</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "labs-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-forward"></i> Vous aimerez peut-être...</h3>
+        <div class="card-deck">
+        
+            <a href="/conference-devopsrex-2017/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab V</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Retour sur la conférence DevOpsRex 2017</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>François BERTHAULT</strong>,
+            <time class="post-date" datetime='2017-10-06T10:03:31Z'>
+                le 6 octobre 2017
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Le 2 Octobre 2017 s&rsquo;est tenu la seconde édition du DevOpsRex à Paris dans la mythique salle du Grand Rex.</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">Agile</span>
+    <span class="badge badge-light">culture</span>
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">experience</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/jenkins-community-day-paris-2017/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab V</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Jenkins Community Day Paris 2017</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>François BERTHAULT</strong>,
+            <time class="post-date" datetime='2017-07-18T07:34:31Z'>
+                le 18 juillet 2017
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Les grenouilles de JFrog Artifactory ont organisé le 11 Juillet 2017 le Jenkins Community Day à Paris.</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">Cloud</span>
+    <span class="badge badge-light">continuous delivery</span>
+    <span class="badge badge-light">continuous integration</span>
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">Docker</span>
+    <span class="badge badge-light">Jenkins</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/microservices-partie-6-points-essentiels/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab V</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Les microservices pour une architecture orientée …</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>François BERTHAULT</strong>,
+            <time class="post-date" datetime='2017-03-27T07:07:09Z'>
+                le 27 mars 2017
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">5 points essentiels à comprendre pour s’initier aux microservices _Cet article s’insère dans la série « microservices » écrite par François Berthault dans le cadre de la …</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">applications</span>
+    <span class="badge badge-light">architecture web</span>
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">méthodes agiles</span>
+    <span class="badge badge-light">Microservices</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+        </div>
+        
+    </div>
+</div>
+
+</div><footer class="footer footer-big footer-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Les Labs de Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href='/categories/lab-0'><i class="fas fa-flask"></i> Lab Agilité</a></li>
+                            <li><a href='/categories/lab-k'><i class="fas fa-flask"></i> Lab Blockchain</a></li>
+                            <li><a href='/categories/lab-v'><i class="fas fa-flask"></i> Lab DevOps</a></li>
+                            <li><a href='/categories/lab-9'><i class="fas fa-flask"></i> Lab Bootcamp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Talan Labs</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/TalanLabs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talanlabs/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://talan.com/metiers/labs/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                            <li><a href="https://www.welcometothejungle.co/fr/companies/talanlabs/" target="_blank"><i class="fas fa-briefcase"></i> Welcome to the Jungle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Le groupe Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/talan_fr" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/talan/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://talan.com/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2019 - Le Blog des Labs de Talan</div>
+    </div>
+</footer>
+</body>
+
+
+<script type="text/javascript" src='/js/jquery.min.js'></script>
+<script type="text/javascript" src='/js/bootstrap.min.js'></script>
+
+
+<script type="text/javascript" src='/js/modernizr.js'></script>
+
+<script type="text/javascript" src='/js/fontawesome.min.js'></script>
+
+
+<script type="text/javascript" src='/js/gaia.js'></script>
+
+<script type="text/javascript" src='/js/custom.js'></script>
+</html>

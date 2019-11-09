@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang='fr-FR'>
+<head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+<title>Talan Labs | Blog</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112601921-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40718882-5');
+</script>
+
+<link rel="icon" type="image/png" sizes="96x96" href='/img/favicon.png'>
+
+<link rel="canonical" href="https://blog.talanlabs.com/meetup-ethereum-2/">
+
+<link rel="stylesheet" href='/css/bootstrap.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/gaia.css' type='text/css'/>
+<link rel="stylesheet" href='/css/fontawesome.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/custom.css' type='text/css'/>
+
+<link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="content"><nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href='/'><img src='/img/logo_talanlabs_white_small.png' alt="Logo Talan Labs"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav float-right">
+        
+        <li><a href="/categories" target="_parent">Les Labs</a></li>
+        
+        <li><a href="/tags" target="_parent">#Tags</a></li>
+        
+        <li><a href="/authors" target="_parent">Les Auteurs</a></li>
+        
+        <li><a href="https://talan.com/metiers/labs" target="_parent">Talan Labs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="section section-header section-header-blog">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image: url('/ethereum.png')"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Meetup ConsenSys : présentation d&#39;Ethereum 2.0</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Meetup ConsenSys : présentation d&#39;Ethereum 2.0</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog"><div class="paragraph">
+<p>Le mardi 9 octobre 2018, l&#8217;équipe Pegasys de ConsenSys tenait un <a href="https://www.meetup.com/fr-FR/ConsensysParis/events/255171299/">meetup</a> sur Ethereum 2.0. Talan Labs était présent et vous fait un retour sur les annonces de la soirée.</p>
+</div>
+<div class="sect1">
+<h2 id="_pourquoi_passer_à_ethereum_2_0">Pourquoi passer à Ethereum 2.0 ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pour comprendre pourquoi Ethereum 2.0 est nécessaire, il faut se pencher sur les défauts de l’actuel Mainnet et notamment sur sa courbe d’utilisation des blocs.</p>
+</div>
+<div class="imageblock text-center img-fluid">
+<div class="content">
+<img src="//eth-utilization-chart.png" alt="Utilisation des blocs">
+</div>
+<div class="title">Utilisation des blocs</div>
+</div>
+<div class="paragraph">
+<p>Depuis 2018, les blocs sont souvent remplis à plus de 85% de leur capacité totale. Les transactions attendant d’être intégrées à un block s’accumulent, le temps d’attente avant validation s’allonge et finalement Ethereum Mainnet arrive à ses limites.</p>
+</div>
+<div class="paragraph">
+<p>D’un point de vue plus technique, le problème est lié au fait qu’Ethereum est ‘single threaded’, c’est-à-dire que tous les noeuds participant au réseau doivent traiter toutes les transactions, et que l’état de la Blockchain doit être stocké dans tous les noeuds.</p>
+</div>
+<div class="paragraph">
+<p>L’autre problème majeur d’Ethereum, et de nombreuses autres Blockchains, est la production de tonnes de CO2 due au protocole de minage dit <strong>‘Proof of Work’</strong>. Les mineurs doivent résoudre un challenge cryptographique difficile demandant une puissance de calcul conséquente, et donc une consommation d’électricité élevée.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ethereum_2_0_qu_est_ce_que_c_est">Ethereum 2.0 qu’est-ce que c’est ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ethereum 2.0 c’est deux composants principaux ajoutés à Ethereum.</p>
+</div>
+<div class="sect2">
+<h3 id="_casper_ffg">CASPER FFG</h3>
+<div class="paragraph">
+<p>CASPER FFG est un protocole de minage de type <strong>‘Proof of Stake’</strong>. Les mineurs deviennent des validateurs, et au lieu d’acheter de la puissance de calcul, achètent des Ethers qu’ils bloquent dans un contrat. Les validateurs sont ensuite sélectionnés aléatoirement et amenés à choisir quel bloc ajouter à la Blockchain Ethereum. Si leurs votes sont corrects, ils sont récompensés, sinon ils sont punis et perdent une partie de leurs Ethers bloqués.</p>
+</div>
+<div class="paragraph">
+<p>Le challenge qu’implique ce protocol de minage repose dans le choix du prochain validateur, qui doit être aléatoire pour éviter les risques de corruption, si le prochain validateur est connu à l’avance par exemple.</p>
+</div>
+<div class="paragraph">
+<p>Par comparaison, dans un protocole ‘Proof of Work’, les mineurs calculent un hash à l’aide d’un nombre qu’ils choisissent au hasard, et répètent cette opération jusqu’à l’obtention d’un hash vérifiant certaines conditions. L’ajout de ce nombre aléatoire assure l’imprévisibilité du prochain mineur.</p>
+</div>
+<div class="paragraph">
+<p>En revanche, avec un protocole comme CASPER FFG, le hasard dans la sélection du prochain validateur doit être généré, ce qui est une tâche compliquée.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sharding">SHARDING</h3>
+<div class="paragraph">
+<p>Le Sharding consiste à séparer les transactions et l’état de la Blockchain en des milliers de Blockchains indépendantes (des galaxies) qui fonctionnent en parallèle et sont capable de fonctionner ensemble quand nécessaire.</p>
+</div>
+<div class="paragraph">
+<p>En pratique, Ethereum 2.0 est composé de 1024 <strong>‘shards’</strong>, ce qui permet un débit 1000 fois supérieur à ce qu’Ethereum est capable de produire actuellement. Chaque ‘shard’ possède un nombre garanti de validateurs. Si le nombre de validateurs est insuffisant, la récompense pour choisir les blocs sera divisée pour inciter les validateurs à voter sur plusieurs ‘shards’.</p>
+</div>
+<div class="paragraph">
+<p>CASPER FFG et Sharding ont été développés indépendamment mais ont fusionnés en juin 2018 pour former Ethereum 2.0.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_autres_Évolutions">AUTRES ÉVOLUTIONS</h3>
+<div class="paragraph">
+<p>Ethereum 2.0 est toujours un projet en phase de R&amp;D et bien que CASPER FFG et Sharding en soient les composantes principales, de nombreux autres changements sont aussi prévus dont <strong>eWASM</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Actuellement, l’<strong>EVM</strong> (Ethereum Virtual Machine) est l’environnement d&#8217;exécution des smart-contracts, lesquels sont écrits en Solidity et compilés en EVM bytecode. L’EVM a été conçue, entre autre, de sorte que le code soit de petite taille, pour que de très nombreux contrats puissent être stockés sur chaque noeud du réseau, et que l’exécution de code soit déterministe, c’est-à-dire que toutes les actions enregistrées dans la Blockchain ne dépendent pas d’éléments extérieurs.</p>
+</div>
+<div class="paragraph">
+<p>WASM (Web Assembly) est un standard web pour la construction d’applications de grande performance. eWASM est basé sur WASM, il a été modifié de façon à devenir déterministe, et répondre aux mêmes critères que l’EVM. L’avantage d’eWASM est la possibilité d’écrire des contrats dans des langages plus courants comme le C ou C++, utilisant les performances natives de ces langages.</p>
+</div>
+<div class="paragraph">
+<p>Le changement vers eWASM permettra donc d’atteindre de meilleures performances d’exécution, en utilisant des langages de programmation plus courants.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_architecture">ARCHITECTURE</h3>
+<div class="paragraph">
+<p>L’architecture d’Ethereum 2.0 est divisée en 4 couches.</p>
+</div>
+<div class="imageblock text-center img-fluid">
+<div class="content">
+<img src="//eth-2-architecture.png" alt="Architecture">
+</div>
+<div class="title"><a href="https://docs.google.com/presentation/d/1G5UZdEL71XAkU5B2v-TC3lmGaRIu2P6QSeF8m3wg6MU/edit#slide=id.g3c326bb661_0_305">Architecture Ethereum 2.0</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ethereum 2.0 sera complètement différent de sa première version. Les évolutions évoquées devront s’échelonner jusqu’à 2021. La Beacon chain sera développée en 2019, suivie des Shard chains en 2020 et enfin de la couche de VM en 2021. Ce projet est réalisé par une communauté diverse, sans autorité décisionnaire, ce qui est à la fois un challenge et une opportunité.</p>
+</div>
+</div>
+</div>
+<div class="separator separator-danger"><img src='/img/talan_star_small.png'
+                                                                 alt="Etoile Talan"/></div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 text-center right-column">
+                <h3 class="social-title"><i class="fas fa-calendar-alt"></i> Date</h3>
+                <time class="f6 mv4 dib tracked" datetime='2018-10-26T12:05:59&#43;01:00'>
+                    Publié le 26 octobre 2018
+                </time>
+
+                <h3 class="social-title"><i class="fas fa-pen"></i> Auteur</h3>
+                <div class="author">
+    <div class="avatar avatar-danger">
+        
+        <img alt="Avatar Sarah MAURET" src='/img/sarah_mauret.png'>
+        
+    </div>
+    <div class="description text-center">
+        <h3 class="big-text">
+            
+            Sarah MAURET
+            
+        </h3>
+        <p class="small-text">Développeur Blockchain &amp; DLT</p>
+    </div>
+    <div class="social-buttons">
+        
+        
+        <a href="https://www.linkedin.com/in/sarah-mauret-5677b291" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-linkedin"></i></a>
+        
+        
+        <a href="https://github.com/smauret" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-github"></i></a>
+        
+    </div>
+</div>
+
+
+                <h3 class="social-title"><i class="fas fa-flask"></i> Lab</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/categories/lab-k'>Lab K</a></div>
+
+
+                <h3 class="social-title"><i class="fas fa-hashtag"></i> Tags</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/tags/ethereum'>#ethereum</a>
+    <a class="badge badge-light" href='/tags/meetup'>#meetup</a>
+    <a class="badge badge-light" href='/tags/consensys'>#consensys</a></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-comments"></i> Commentaires</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "labs-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-forward"></i> Vous aimerez peut-être...</h3>
+        <div class="card-deck">
+        
+            <a href="/meetup-asseth-devcon3-talan-ethereum/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab K</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Meetup Asseth chez Talan : retour sur Devcon3</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Alain NICOLAS</strong>,
+            <time class="post-date" datetime='2017-11-16T16:10:55Z'>
+                le 16 novembre 2017
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Lundi 13 novembre 2017 avait lieu le meetup de l&#8217;Asseth (Association Ethereum française).</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">asseth</span>
+    <span class="badge badge-light">blockchain</span>
+    <span class="badge badge-light">devcon3</span>
+    <span class="badge badge-light">ethereum</span>
+    <span class="badge badge-light">meetup</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/meetup-asseth-talan-debrief-devcon3/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab K</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Meetup Asseth chez Talan : débrief du Devcon3</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Alain NICOLAS</strong>,
+            <time class="post-date" datetime='2017-11-09T09:54:55Z'>
+                le 9 novembre 2017
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Le lundi 13 novembre à partir de 18h30 dans les locaux de Talan aura lieu le débrief du Devcon3, la conférence annuelle des développeurs Ethereum qui s’est déroulée du 1 au 4 …</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">asseth</span>
+    <span class="badge badge-light">blockchain</span>
+    <span class="badge badge-light">devcon3</span>
+    <span class="badge badge-light">ethereum</span>
+    <span class="badge badge-light">meetup</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/hackathon-casino/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab K</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Retour sur le hackathon Blockchain and Shop …</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Jérôme BERNARD</strong>,
+            <time class="post-date" datetime='2018-02-24T12:17:01&#43;01:00'>
+                le 24 février 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Hackathon Blockchain &amp; Shop  Casino organisait un hackathon du 16 au 18 Février autour de la blockchain, avec pour thématiques la prédilection sur la traçabilité et les cartes …</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">hackathon</span>
+    <span class="badge badge-light">ethereum</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+        </div>
+        
+    </div>
+</div>
+
+</div><footer class="footer footer-big footer-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Les Labs de Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href='/categories/lab-0'><i class="fas fa-flask"></i> Lab Agilité</a></li>
+                            <li><a href='/categories/lab-k'><i class="fas fa-flask"></i> Lab Blockchain</a></li>
+                            <li><a href='/categories/lab-v'><i class="fas fa-flask"></i> Lab DevOps</a></li>
+                            <li><a href='/categories/lab-9'><i class="fas fa-flask"></i> Lab Bootcamp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Talan Labs</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/TalanLabs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talanlabs/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://talan.com/metiers/labs/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                            <li><a href="https://www.welcometothejungle.co/fr/companies/talanlabs/" target="_blank"><i class="fas fa-briefcase"></i> Welcome to the Jungle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Le groupe Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/talan_fr" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/talan/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://talan.com/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2019 - Le Blog des Labs de Talan</div>
+    </div>
+</footer>
+</body>
+
+
+<script type="text/javascript" src='/js/jquery.min.js'></script>
+<script type="text/javascript" src='/js/bootstrap.min.js'></script>
+
+
+<script type="text/javascript" src='/js/modernizr.js'></script>
+
+<script type="text/javascript" src='/js/fontawesome.min.js'></script>
+
+
+<script type="text/javascript" src='/js/gaia.js'></script>
+
+<script type="text/javascript" src='/js/custom.js'></script>
+</html>

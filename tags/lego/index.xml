@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lego on Talan Labs | Blog</title>
+    <link>https://blog.talanlabs.com/tags/lego/</link>
+    <description>Recent content in Lego on Talan Labs | Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>© 2019 - Le Blog des Labs de Talan</copyright>
+    <lastBuildDate>Wed, 27 Mar 2019 19:55:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.talanlabs.com/tags/lego/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lego4DevOps</title>
+      <link>https://blog.talanlabs.com/lego4devops/</link>
+      <pubDate>Wed, 27 Mar 2019 19:55:37 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/lego4devops/</guid>
+      <description>Parce qu&amp;rsquo;il n&amp;rsquo;y a pas que les coachs agiles qui ont le droit de vous faire jouer au Lego</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang='fr-FR'>
+<head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+<title>Talan Labs | Blog</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112601921-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40718882-5');
+</script>
+
+<link rel="icon" type="image/png" sizes="96x96" href='/img/favicon.png'>
+
+<link rel="canonical" href="https://blog.talanlabs.com/architecture-microservices-partie-1-definitions/">
+
+<link rel="stylesheet" href='/css/bootstrap.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/gaia.css' type='text/css'/>
+<link rel="stylesheet" href='/css/fontawesome.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/custom.css' type='text/css'/>
+
+<link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="content"><nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href='/'><img src='/img/logo_talanlabs_white_small.png' alt="Logo Talan Labs"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav float-right">
+        
+        <li><a href="/categories" target="_parent">Les Labs</a></li>
+        
+        <li><a href="/tags" target="_parent">#Tags</a></li>
+        
+        <li><a href="/authors" target="_parent">Les Auteurs</a></li>
+        
+        <li><a href="https://talan.com/metiers/labs" target="_parent">Talan Labs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="section section-header section-header-blog">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image: url('/work-in-progress.jpg')"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Les microservices pour une architecture orientée web n°1</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Les microservices pour une architecture orientée web n°1</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog">
+
+<h1 id="définitions-et-caractéristiques">Définitions et caractéristiques</h1>
+
+<p><em>Cet article s&rsquo;insère dans la série &ldquo;microservices&rdquo; écrite par François Berthault dans le cadre de la participation de Talan Labs à <a href="https://www.devoxx.fr/">Devoxx 2017</a>, du 5 au 7 avril prochains au Palais des Congrès de Paris.</em></p>
+
+<p>La notion d’<strong>architecture en microservices</strong> est très récente, apparue depuis 3 à 4 ans. Précurseur et véritable gourou sur le sujet, <a href="https://www.martinfowler.com/">Martin Fowler</a>  est la référence en matière de microservices. Il a notamment écrit de nombreux articles sur la <strong><em>componentization</em> des applications logicielles</strong>.</p>
+
+<p>Aujourd’hui, les microservices sont de plus en plus utilisés pour <strong>construire des applications d’entreprise</strong> ; certainement parce que les retours sont très positifs. Il existe pourtant peu d’informations sur le sujet.</p>
+
+<p>Cette série d’articles a pour objectif d’**expliquer les microservices **et d’en comprendre les implications et les usages.</p>
+
+<h2 id="qu-est-ce-qu-une-architecture-en-microservices">Qu’est-ce qu’une architecture en microservices ?</h2>
+
+<p>L’architecture en microservices est une approche servant à <strong>concevoir une application unique</strong> basé sur un <strong>ensemble de petits services indépendants</strong>. Chaque microservice s&rsquo;exécute dans un processus qui lui est propre et communique via un protocole léger, le plus souvent à base de <strong>ressource HTTP</strong> (tel que REST -<em>REpresentational State Transfer- par exemple</em>).</p>
+
+<p>Grâce à une <strong>gestion centralisée et minimaliste</strong>, chaque microservice peut être écrit dans un langage qui lui est propre. Pour chaque microservice, en fonction de l’objectif auquel il doit répondre, il est donc possible d’aller au plus simple et d’**utiliser les outils et langages les plus pertinents. <strong>L’approche en microservices est donc totalement inverse de l’</strong>approche monolithique**, certes plus homogène car composée d’une seule et même technologie, mais qui entraîne un certain nombre de problèmes, de réécriture notamment.</p>
+
+<h2 id="la-componentization-une-nécessité-pour-les-microservices">La <em>componentization</em>, une nécessité pour les microservices</h2>
+
+<p>Avec les microservices, <strong>chaque élément correspond à un service</strong> (<em>componentization</em>), ce qui les distingue de l’approche par librairies réutilisables, comme c’est encore majoritairement le cas dans l’industrie logicielle. L’objectif principal est de <strong>pouvoir déployer les microservices indépendamment</strong> (ce qui devrait réjouir vos OPS) et de <strong>respecter le principe de la responsabilité unique</strong>.</p>
+
+<p>Quelques facteurs indispensables à la _componentization_ :</p>
+
+<ul>
+<li><strong>cohérence et logique du système </strong>: tout service doit correspondre à une fonctionnalité précise ;
+
+<ul>
+<li><strong>spécificité des fonctionnalités</strong>  : chaque service ne fait qu’une chose et il la fait bien ;</li>
+<li><strong>autonomie des services </strong>: chaque service dispose de son propre code, gère ses propres données et ne les partage pas (pas directement en tout cas) avec d’autres services ;</li>
+<li><strong>indépendance des microservices </strong>: chaque microservice ne doit pas inclure de couplage fort avec un autre microservice.</li>
+</ul></li>
+</ul>
+
+<h2 id="un-modèle-d-architecture-plus-solide">Un modèle d’architecture plus solide</h2>
+
+<p><img src="microservices1.png" alt="La gestion de la base de données dans une architecture monolithique et dans une architecture microservices © Martin Fowler" />
+La gestion de la base de données dans une architecture monolithique et dans une architecture microservices © Martin Fowler</p>
+
+<p>L&rsquo;architecture microservices favorise la <a href="http://microservices.io/articles/scalecube.html">scalabité cubique</a> : contrairement aux applications de type monolithique, <strong>ce design apporte de la robustesse</strong> à votre application. Le clonage de serveur n’est plus une fatalité. Ainsi, <strong>seuls les services ayant besoin d’être étendus sont dupliqués</strong>, comme expliqué ci-dessous.</p>
+
+<p><img src="microservices2.png" alt="Comparaison entre architecture monolithique et architecture microservices © Martin Fowler" />
+Comparaison entre architecture monolithique et architecture microservices © Martin Fowler</p>
+
+<h2 id="microservices-et-architecture-orientée-services-soa-même-combat">Microservices et architecture orientée services (SOA) : même combat ?</h2>
+
+<p>On pourrait croire que le microservice est une sorte d’architecture orientée service (SOA) déguisée. Si, au premier abord, les deux approches peuvent sembler assez similaires, une différence majeure les distingue :</p>
+
+<ul>
+<li><strong>le SOA ou <em>service-oriented architecture</em></strong> est un modèle d&rsquo;architecture qui définit des composants applicatifs produisant des services pour d’autres composants via un protocole de communication réseau ;
+
+<ul>
+<li><strong>l’architecture en microservices</strong> est, au contraire, liée à une application, qui se compose de petits processus indépendants qui communiquent entre eux en utilisant des API (<em>Application Programming Interface</em>), ce qui les rend indépendants des langages.</li>
+</ul></li>
+</ul>
+
+<p><em>Vous avez aimé cet article ? Découvrez ou redécouvrez les autres épisodes de la série « Les microservices pour une architecture orientée web » :</em></p>
+
+<p><em>Partie 2  <a href="https://blog.talanlabs.com/architecture-microservices-partie-2-changement-point-de-vue/">Les microservices pour une architecture orientée web n°2 : Un changement de point de vue</a></em></p>
+
+<p><em>Partie 3  <a href="https://blog.talanlabs.com/architecture-microservices-partie-3-organisation/">Les microservices pour une architecture orientée web n°3 : Organisation des équipes pour un projet d’architecture en microservices</a></em></p>
+<div class="separator separator-danger"><img src='/img/talan_star_small.png'
+                                                                 alt="Etoile Talan"/></div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 text-center right-column">
+                <h3 class="social-title"><i class="fas fa-calendar-alt"></i> Date</h3>
+                <time class="f6 mv4 dib tracked" datetime='2017-02-21T09:09:17Z'>
+                    Publié le 21 février 2017
+                </time>
+
+                <h3 class="social-title"><i class="fas fa-pen"></i> Auteur</h3>
+                <div class="author">
+    <div class="avatar avatar-danger">
+        
+        <img alt="Avatar François BERTHAULT" src='/img/francois_berthault.jpg'>
+        
+    </div>
+    <div class="description text-center">
+        <h3 class="big-text">
+            
+            François BERTHAULT
+            
+        </h3>
+        <p class="small-text">Coach DevOps</p>
+    </div>
+    <div class="social-buttons">
+        
+        <a href="https://twitter.com/fanfansama" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-twitter"></i></a>
+        
+        
+        <a href="https://www.linkedin.com/in/fran%c3%a7ois-berthault-491a5850" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-linkedin"></i></a>
+        
+        
+    </div>
+</div>
+
+
+                <h3 class="social-title"><i class="fas fa-flask"></i> Lab</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/categories/lab-v'>Lab V</a></div>
+
+
+                <h3 class="social-title"><i class="fas fa-hashtag"></i> Tags</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/tags/cloud'>#Cloud</a>
+    <a class="badge badge-light" href='/tags/devops'>#DevOps</a>
+    <a class="badge badge-light" href='/tags/microservice'>#microservice</a></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-comments"></i> Commentaires</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "labs-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+</div><footer class="footer footer-big footer-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Les Labs de Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href='/categories/lab-0'><i class="fas fa-flask"></i> Lab Agilité</a></li>
+                            <li><a href='/categories/lab-k'><i class="fas fa-flask"></i> Lab Blockchain</a></li>
+                            <li><a href='/categories/lab-v'><i class="fas fa-flask"></i> Lab DevOps</a></li>
+                            <li><a href='/categories/lab-9'><i class="fas fa-flask"></i> Lab Bootcamp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Talan Labs</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/TalanLabs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talanlabs/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://talan.com/metiers/labs/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                            <li><a href="https://www.welcometothejungle.co/fr/companies/talanlabs/" target="_blank"><i class="fas fa-briefcase"></i> Welcome to the Jungle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Le groupe Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/talan_fr" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/talan/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://talan.com/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2019 - Le Blog des Labs de Talan</div>
+    </div>
+</footer>
+</body>
+
+
+<script type="text/javascript" src='/js/jquery.min.js'></script>
+<script type="text/javascript" src='/js/bootstrap.min.js'></script>
+
+
+<script type="text/javascript" src='/js/modernizr.js'></script>
+
+<script type="text/javascript" src='/js/fontawesome.min.js'></script>
+
+
+<script type="text/javascript" src='/js/gaia.js'></script>
+
+<script type="text/javascript" src='/js/custom.js'></script>
+</html>

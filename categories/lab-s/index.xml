@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab S on Talan Labs | Blog</title>
+    <link>https://blog.talanlabs.com/categories/lab-s/</link>
+    <description>Recent content in Lab S on Talan Labs | Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>© 2019 - Le Blog des Labs de Talan</copyright>
+    <lastBuildDate>Tue, 19 Feb 2019 08:29:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.talanlabs.com/categories/lab-s/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ElasticSearch, back to the future</title>
+      <link>https://blog.talanlabs.com/elasticsearch-back-to-the-future/</link>
+      <pubDate>Tue, 19 Feb 2019 08:29:31 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/elasticsearch-back-to-the-future/</guid>
+      <description>Je me suis remis à ElasticSearch après plusieurs années d&amp;rsquo;absence et le choc a été dur : revenir à Oracle après 5 ans, pas de souci, mais dans le cas d&amp;rsquo;Elasticsearch, ça avait tellement évolué que j&amp;rsquo;ai du prendre un peu de temps pour m&amp;rsquo;y remettre.</description>
+    </item>
+    
+    <item>
+      <title>Datomic la base de données qui n&#39;oublie rien</title>
+      <link>https://blog.talanlabs.com/datomic-base-de-donnees-noublie-rien/</link>
+      <pubDate>Fri, 26 Jun 2015 13:33:58 +0000</pubDate>
+      
+      <guid>https://blog.talanlabs.com/datomic-base-de-donnees-noublie-rien/</guid>
+      <description>Cette année à Devoxx au rayon Big Data on pouvait assister à la présentation de Datomic, une base de données NoSQL.</description>
+    </item>
+    
+  </channel>
+</rss>

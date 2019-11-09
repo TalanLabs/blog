@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang='fr-FR'>
+<head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+<title>Talan Labs | Blog</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112601921-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40718882-5');
+</script>
+
+<link rel="icon" type="image/png" sizes="96x96" href='/img/favicon.png'>
+
+<link rel="canonical" href="https://blog.talanlabs.com/allo-docteur-mon-code-est-malade/">
+
+<link rel="stylesheet" href='/css/bootstrap.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/gaia.css' type='text/css'/>
+<link rel="stylesheet" href='/css/fontawesome.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/custom.css' type='text/css'/>
+
+<link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="content"><nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href='/'><img src='/img/logo_talanlabs_white_small.png' alt="Logo Talan Labs"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav float-right">
+        
+        <li><a href="/categories" target="_parent">Les Labs</a></li>
+        
+        <li><a href="/tags" target="_parent">#Tags</a></li>
+        
+        <li><a href="/authors" target="_parent">Les Auteurs</a></li>
+        
+        <li><a href="https://talan.com/metiers/labs" target="_parent">Talan Labs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="section section-header section-header-blog">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image: url('/work-in-progress.jpg')"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Allo docteur, je crois que mon code est malade</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Allo docteur, je crois que mon code est malade</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog">
+
+<p>Vous êtes un développeur, un Lead Dev ou CTO et travaillez sur tout type de projet logiciel ? Comment vérifier la santé du code et s&rsquo;assurer que le produit développé ne soit pas malade ? Quels sont les enjeux et que faire s’il l&rsquo;est ?</p>
+
+<p><a href="code-malade.png"><img src="code-malade.png" alt="Connaître et gérer la santé du code" />
+</a></p>
+
+<p>Vous êtes agile mais vous n’en voyez toujours pas les bénéfices ? C’est peut-être normal, vous oubliez une partie complémentaire : l’artisanat du code, ou software craftsmanship.</p>
+
+<blockquote>
+<p><em>📖 Tandis que l’agilité nous aide à nous assurer que nous construisons la bonne chose, les pratiques techniques nous aident à nous assurer que nous construisons la chose bien.</em></p>
+</blockquote>
+
+<h1 id="comment-mener-le-diagnostic-pour-connaître-la-santé-du-code"><strong>Comment mener le diagnostic pour connaître la santé du code ?</strong></h1>
+
+<p>Des outils d’analyse statique de code tels que SonarQube peuvent vous amener des premiers indices. Ceci dit, il n’est pas toujours évident d’interpréter ses rapports.</p>
+
+<blockquote>
+<p><em>Sur le code le plus malade que j’ai pu voir jusqu’à présent (en phase terminale, incurable), SonarQube attribue une note de A, soit la meilleure note. Il s’avère que la note est donnée est calculée à partir d’une estimation : la dette technique du projet comparée à l’estimation du coût pour tout réécrire à partir d’une feuille blanche. Dans mon cas, la complexité de l’application était telle qu’il est, selon SonarQube, plus simple de résorber la dette technique que de tout recommencer. Dans les faits, la complexité introduite n’avait pas lieu d’être, et dès lors, on se rend compte que le calcul de la note peut artificiellement être influencée par la façon d’écrire le code.</em></p>
+</blockquote>
+
+<p>Avec un bon budget, il est également possible de commander un audit de code réalisé par un cabinet externe.</p>
+
+<blockquote>
+<p>👉 La qualité logicielle passe par différentes notions que j’aborde dans un précédent article : <a href="https://blog.talanlabs.com/notions-derriere-la-qualite-logicielle/">Les notions derrière la qualité logicielle, ce qu’il faut savoir</a></p>
+</blockquote>
+
+<h1 id="quels-sont-les-symptômes"><strong>Quels sont les symptômes ?</strong></h1>
+
+<p>En général, il n’y a pas besoin d’être le nez dans le code pour savoir s’il est en bonne santé. Ça se sent ! Quelques symptômes :</p>
+
+<ul>
+<li>Vous n’avez pas assez de tests unitaires ou pas du tout (on parle alors de code legacy) !
+
+<ul>
+<li>Vous avez des tests automatisés de haut niveau instables et lourds à maintenir</li>
+<li>Vos évolutions sont très coûteuses</li>
+<li>Des technologies utilisées sont méconnues d’une majeure partie de l’équipe de développement</li>
+<li>Des régressions font fréquemment leur apparition</li>
+<li>L’architecture et la logique sont complexes</li>
+<li>Il existe une dette technique à faire pâlir la Grèce</li>
+<li>Des outils ont été mis en place pour contourner les problèmes</li>
+<li>Des frameworks ont élu domicile au cœur du système alors que vous aimeriez en changer</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>👉 Si vous êtes le responsable produit et travaillez avec une équipe de développement, quelques uns de ces points peuvent vous aider à connaître l’état du produit. Restez proche des équipes de réalisation !</p>
+</blockquote>
+
+<h1 id="alors-docteur-c-est-grave"><strong>Alors docteur, c’est grave ?</strong></h1>
+
+<p>Plusieurs ordonnances vous sont proposées :</p>
+
+<ul>
+<li>ne rien faire
+
+<ul>
+<li>résorber la dette progressivement</li>
+<li>repartir d’une page blanche</li>
+</ul></li>
+</ul>
+
+<h2 id="ne-rien-faire">Ne rien faire</h2>
+
+<p>Il s’agit en fait d’une fausse solution, car les évolutions seront de plus en plus coûteuses, et les bugs de plus en plus difficiles à corriger, les budgets illimités n’existant pas. Le risque de départ des développeurs n’est pas à prendre à la légère. Avec tout départ, c’est un peu de connaissance du projet et de l’ambiance dans l’équipe qui partent aussi.
+La règle à appliquer dans ce cas est malgré tout la règle du “Boy scout” : Laisse ton code en meilleur état que tu ne l’as trouvé.</p>
+
+<h2 id="résorber-la-dette-progressivement">Résorber la dette progressivement</h2>
+
+<p>La tâche sera longue et difficile, mais peut s’avérer beaucoup moins coûteuse que de tout recommencer. Il n’en reste pas moins qu’il s’agit d’un sacré challenge qui peuvent en motiver certains, et en décourager d’autres. Selon moi, cela va principalement dépendre de l’environnement de travail et de l’angle d’attaque.
+Le plus souvent, un pourcentage de production sera consacré à la résolution de la dette. Cela peut également passer par la création de fiches techniques pour refactorer telle ou telle partie du code, même si je préfère en général effectuer le refactoring selon les besoins de l’équipe et les évolutions confiées.</p>
+
+<blockquote>
+<p>_Exemple : Si je dois corriger un bug ou faire une évolution dans une méthode de 100 lignes, je pourrais en profiter pour ajouter des harnais de tests dans un premier temps, puis simplifier et mieux découper cette méthode pour respecter le <a href="https://fr.wikipedia.org/wiki/Principe_de_responsabilit%C3%A9_unique">principe de responsabilité unique</a> (SRP)._</p>
+</blockquote>
+
+<h2 id="repartir-d-une-feuille-blanche">Repartir d’une feuille blanche</h2>
+
+<p>La solution préférée des développeurs, mais pas des acheteurs !
+Si annoncer à son client que le code est dans un tel état qu’il faut le recommencer est très délicat quand il s’agit de son propre développement, cela peut être plus facile lorsque le développement et la maintenance de l’application sont confiés à une toute autre entreprise.</p>
+
+<blockquote>
+<p>💡 Et, de toute évidence, si on recommence à zéro, on en profite pour repartir sur une stack technique à jour et dans l’état de l’art !</p>
+</blockquote>
+
+<p>Cette solution n’est pas sans risque, elle est très engageante. Entreprendre de repartir d’une feuille blanche et s’arrêter au milieu faute de budget est à l’opposé de ce qu’il faut faire. On se retrouverait alors à gérer deux applications en parallèle avec pour chacune sa complexité.</p>
+
+<p>Si vous êtes tenté de repartir d’une feuille blanche, vous serez probablement amené à imaginer au moins deux façons de faire.</p>
+
+<h3 id="première-idée-reconstruire-à-côté">Première idée : reconstruire à côté</h3>
+
+<p>On serait tenté de construire la nouvelle application à côté et de ne la livrer qu’une fois prête, mais il est bien entendu déconseillé de procéder ainsi, surtout si l’application actuelle est déjà en production. Cela serait contraire à l’esprit agile, qui consiste à créer de la valeur et avoir des retours rapides : l’effet tunnel n’est pas à négliger et on n’est pas sûr d’obtenir quelque chose d’acceptable à l’arrivée.
+Dans le lexique médical, on pourrait comparer cette reconstruction à la grossesse. On ne découvrira qu’au bout de 9 mois à quoi ressemble le bébé, et, espérons le, s’il est viable.</p>
+
+<h3 id="seconde-idée-reprendre-petit-à-petit-des-fonctionnalités">Seconde idée : reprendre petit à petit des fonctionnalités</h3>
+
+<p>Je privilégie cette idée, mais attention à la méthode ! Sachant que l’application legacy est amenée à être jetée (normalement), il est indispensable de ne pas en être dépendant.</p>
+
+<blockquote>
+<p>👉 C’est l’inverse qui doit être fait : l’application legacy doit dépendre de la nouvelle, sinon, que se passera-t-il lorsque nous voudrons jeter la première ?</p>
+</blockquote>
+
+<p>L’architecture fonctionnelle et technique doit être revue en apprenant des erreurs commises précédemment.
+Un des impératifs de cette refonte est de garder le nouveau système propre. Il est hors de question de propager la “maladie” du legacy vers cette nouvelle, elle s’y installerait partout à terme.</p>
+
+<blockquote>
+<p>💡 Malheureusement, ce n’est pas toujours possible de faire ainsi, et ce que je préconise dans ce cas est de développer un adaptateur, bien isolé du reste, pour faire office de couche isolante entre ces deux zones. La maladie ne doit pas se propager !</p>
+</blockquote>
+
+<p>La reprise des fonctionnalités peut se faire lors d’évolutions ou d’ajouts de fonctionnalités. L’existant va alors appeler le nouveau service au lieu de l’ancien.</p>
+
+<blockquote>
+<p><em>Exemple : Si je dois enrichir la fonctionnalité de recherche d’informations, plutôt que d’adapter le service actuel avec tous ses défauts, je mets en place un nouveau service refait à neuf dans un nouveau composant isolé et le rend disponible pour que l’existant le sollicite (pas de dépendance !).</em></p>
+</blockquote>
+
+<p>Dans le lexique médical, cette solution serait plutôt comparée à l’apprentissage donné par une personne âgée à un enfant, qui prend de plus en plus de responsabilités et déleste la personne âgée.</p>
+
+<h1 id="le-vaccin-ça-existe"><strong>Le vaccin, ça existe ?</strong></h1>
+
+<p>Il existe différentes façon d’éviter que la maladie se déclare.
+Les symptômes cités doivent être détectés au plus tôt et il faut s’attaquer à plusieurs axes d’amélioration en parallèle.
+Les boucles de retour doivent être les plus courtes possibles, que ce soit avec le client, l’utilisateur ou par le système de build.</p>
+
+<blockquote>
+<p>👉 Si vous ne l’avez pas encore lu, je vous conseille de lire un de mes précédents articles qui aborde une partie de ce sujet : <a href="https://blog.talanlabs.com/de-la-qualite-en-restant-productif/">Livrer de la qualité tout en restant productif</a></p>
+</blockquote>
+
+<p>Les bonnes pratiques de développement doivent mises en place dès le début et être suivies tout au long du développement du produit. Plus on laisse traîner, plus il sera difficile de s’en tirer sans en laisser des plumes.</p>
+
+<blockquote>
+<p><em>L’image d’une construction est souvent prise pour expliquer l’évolution du code. Cependant, ce n’est pas l’image la plus fidèle, je préfère celle du jardinage. Il faut voir le code comme étant un être vivant, qui évolue, d’une manière des fois imprévue, et qu’il faut régulièrement entretenir. Le développeur serait alors un jardinier, qui arrose l’arbre et coupe des branches pour lesquelles il était à l’origine et pour lesquelles il assurait la maintenance.</em></p>
+</blockquote>
+
+<p>L’équipe de développement doit être responsabilisée mais aussi sensibilisée aux problèmes de qualité de code. Les katas, sessions de revue de code sont d’excellents moyens pour y remédier.</p>
+
+<blockquote>
+<p>👉 En effet, en plus de permettre d’améliorer la qualité de l’application à court et à long terme, la revue de code permet de faire grandir chaque personne, que ce soit le relecteur ou le relu. J’y ai d’ailleurs consacré tout un article, alors n’hésitez pas à le lire : <a href="https://blog.talanlabs.com/travailler-efficacement-en-equipe/">Travailler efficacement en équipe avec la revue de code</a></p>
+</blockquote>
+
+<p>La sensibilisation à la qualité passe par tout le monde !</p>
+
+<blockquote>
+<p><em>📖 “In order to increase business agility, and have a good return on investment, keeping code quality high is paramount” (Sandro Mancuso, dans son livre The Software Craftsmanship, Professionalism, Pragmatism, Pride)</em></p>
+</blockquote>
+
+<h1 id="et-vous"><strong>Et vous ?</strong></h1>
+
+<p>Avez-vous rencontré des symptômes cités ? Envisagez-vous une résorption de la dette ou un refonte intégrale de l’application ? Comment vous-y prenez-vous ?
+Je serai ravi d’avoir vos retours en commentaire !</p>
+
+<p>Dans un prochain article, j&rsquo;essaierai d’aborder des méthodes pour minimiser le risque d’échec des projets et commencer un projet sur de bonnes bases.</p>
+<div class="separator separator-danger"><img src='/img/talan_star_small.png'
+                                                                 alt="Etoile Talan"/></div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 text-center right-column">
+                <h3 class="social-title"><i class="fas fa-calendar-alt"></i> Date</h3>
+                <time class="f6 mv4 dib tracked" datetime='2018-08-30T06:56:52Z'>
+                    Publié le 30 août 2018
+                </time>
+
+                <h3 class="social-title"><i class="fas fa-pen"></i> Auteur</h3>
+                <div class="author">
+    <div class="avatar avatar-danger">
+        
+        <img alt="Avatar Nicolas POSTE" src='/img/nicolas_poste.jpg'>
+        
+    </div>
+    <div class="description text-center">
+        <h3 class="big-text">
+            
+            Nicolas POSTE
+            
+        </h3>
+        <p class="small-text">Tech Lead</p>
+    </div>
+    <div class="social-buttons">
+        
+        
+        <a href="https://www.linkedin.com/in/nicolas-poste" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-linkedin"></i></a>
+        
+        
+    </div>
+</div>
+
+
+                <h3 class="social-title"><i class="fas fa-flask"></i> Lab</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/categories/lab-x'>Lab X</a></div>
+
+
+                <h3 class="social-title"><i class="fas fa-hashtag"></i> Tags</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/tags/qualite'>#Qualité</a>
+    <a class="badge badge-light" href='/tags/sante-du-code'>#Santé du code</a>
+    <a class="badge badge-light" href='/tags/software-craftsmanship'>#Software Craftsmanship</a></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-comments"></i> Commentaires</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "labs-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-forward"></i> Vous aimerez peut-être...</h3>
+        <div class="card-deck">
+        
+            <a href="/notions-derriere-la-qualite-logicielle/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab X</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Les notions derrière la qualité logicielle, ce …</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Nicolas POSTE</strong>,
+            <time class="post-date" datetime='2018-08-23T14:02:51Z'>
+                le 23 août 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">J&rsquo;imagine que pour la plupart d’entre vous, le terme &ldquo;qualité logicielle&rdquo; est flou, mais saviez-vous qu’il existe une norme internationale qui le définit ?</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">Qualité</span>
+    <span class="badge badge-light">Software Craftsmanship</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/travailler-efficacement-en-equipe/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab X</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Travailler efficacement en équipe avec la revue de …</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Nicolas POSTE</strong>,
+            <time class="post-date" datetime='2018-05-07T08:24:59Z'>
+                le 7 mai 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Vous êtes développeur ou CTO et travaillez sur une application legacy, souffrant de nombreux défauts et bugs ?</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">Intégration Continue</span>
+    <span class="badge badge-light">Revue de code</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+            <a href="/de-la-qualite-en-restant-productif/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab X</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Livrer de la qualité tout en restant productif</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Nicolas POSTE</strong>,
+            <time class="post-date" datetime='2018-04-25T14:39:01Z'>
+                le 25 avril 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Vous êtes CTO ou développeur et soucieux de livrer de la qualité tout en restant productif ?</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">Intégration Continue</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+        </div>
+        
+    </div>
+</div>
+
+</div><footer class="footer footer-big footer-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Les Labs de Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href='/categories/lab-0'><i class="fas fa-flask"></i> Lab Agilité</a></li>
+                            <li><a href='/categories/lab-k'><i class="fas fa-flask"></i> Lab Blockchain</a></li>
+                            <li><a href='/categories/lab-v'><i class="fas fa-flask"></i> Lab DevOps</a></li>
+                            <li><a href='/categories/lab-9'><i class="fas fa-flask"></i> Lab Bootcamp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Talan Labs</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/TalanLabs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talanlabs/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://talan.com/metiers/labs/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                            <li><a href="https://www.welcometothejungle.co/fr/companies/talanlabs/" target="_blank"><i class="fas fa-briefcase"></i> Welcome to the Jungle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Le groupe Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/talan_fr" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/talan/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://talan.com/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2019 - Le Blog des Labs de Talan</div>
+    </div>
+</footer>
+</body>
+
+
+<script type="text/javascript" src='/js/jquery.min.js'></script>
+<script type="text/javascript" src='/js/bootstrap.min.js'></script>
+
+
+<script type="text/javascript" src='/js/modernizr.js'></script>
+
+<script type="text/javascript" src='/js/fontawesome.min.js'></script>
+
+
+<script type="text/javascript" src='/js/gaia.js'></script>
+
+<script type="text/javascript" src='/js/custom.js'></script>
+</html>

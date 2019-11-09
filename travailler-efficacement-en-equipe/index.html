@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang='fr-FR'>
+<head><meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+<title>Talan Labs | Blog</title>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112601921-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40718882-5');
+</script>
+
+<link rel="icon" type="image/png" sizes="96x96" href='/img/favicon.png'>
+
+<link rel="canonical" href="https://blog.talanlabs.com/travailler-efficacement-en-equipe/">
+
+<link rel="stylesheet" href='/css/bootstrap.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/gaia.css' type='text/css'/>
+<link rel="stylesheet" href='/css/fontawesome.min.css' type='text/css'/>
+<link rel="stylesheet" href='/css/custom.css' type='text/css'/>
+
+<link href='https://fonts.googleapis.com/css?family=Cambo|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="content"><nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href='/'><img src='/img/logo_talanlabs_white_small.png' alt="Logo Talan Labs"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav float-right">
+        
+        <li><a href="/categories" target="_parent">Les Labs</a></li>
+        
+        <li><a href="/tags" target="_parent">#Tags</a></li>
+        
+        <li><a href="/authors" target="_parent">Les Auteurs</a></li>
+        
+        <li><a href="https://talan.com/metiers/labs" target="_parent">Talan Labs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="section section-header section-header-blog">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image: url('/work-in-progress.jpg')"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Travailler efficacement en équipe avec la revue de code</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Travailler efficacement en équipe avec la revue de code</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content-blog">
+
+<p>Vous êtes développeur ou CTO et travaillez sur une application legacy, souffrant de nombreux défauts et bugs ? Retrouvez le chemin vers l’efficacité en mettant en place quelques bonnes pratiques, comme la revue de code.</p>
+
+<p><a href="review2.png"><img src="review2.png" alt="Revue de code" />
+</a></p>
+
+<p>Nous avons déjà vu lors d’un <a href="https://blog.talanlabs.com/de-la-qualite-en-restant-productif/">précédent article</a> que la mise en place d’une plateforme d’intégration continue permettait d’améliorer la qualité de l’application.
+Cette fois, nous allons voir comment les développeurs peuvent, avec un peu de rigueur et un minimum de temps à investir, améliorer la qualité à court et à long terme.</p>
+
+<p>J’ai eu l’occasion, à travers mes différentes missions, de mettre en place ou d’affiner le procédé de revue de code, quelque soit la taille et la qualité de l’application à mon arrivée.</p>
+
+<h2 id="mais-qu-est-ce-qu-une-revue-de-code">Mais… Qu’est ce qu’une revue de code ?</h2>
+
+<p>La revue de code est un processus outillé qui doit se faire juste avant l’intégration du développement à la branche principale. Cette revue de code fait généralement partie de la <em>Definition of Done</em>.
+De nombreux outils facilitent l’opération de revue de code.</p>
+
+<h2 id="comment-mettre-en-place-un-système-de-revue-de-code">Comment mettre en place un système de revue de code ?</h2>
+
+<p>Afin de pouvoir effectuer la revue de code de façon efficace et utile, je recommande de :</p>
+
+<ul>
+<li>partager un code style au sein de toute l’équipe ou des équipes qui interviennent sur l’application<em>👉 Partager un code style permet de minimiser le nombre de lignes modifiées inutilement et automatiquement par le formateur. Ainsi, seules les lignes véritablement modifiées lors des développeurs seront mises en évidence, laissant moins de chances à une coquille de passer à travers le filet ;)</em>
+
+<ul>
+<li>laisser n’importe quel développeur de l’équipe de faire la revue, peu importe sa séniorité ou son ancienneté sur le projet. Attention toutefois au cas où un junior relit le code d’un autre junior car les gains ne sont pas au rendez-vous et cela peut-même être contre-productif. Dans le cas où un junior relit le code, il peut être nécessaire qu’un développeur plus expérimenté l’assiste, ou fasse une dernière validation après lui, afin de valider la pertinence des remarques et la qualité du code<em>👉 Même en tant que développeur senior, votre code a tout intérêt à être revu par un autre développeur. Cela encourage la collaboration, le mentoring et le partage de la connaissance</em></li>
+<li>mettre en place un environnement de review</li>
+</ul></li>
+</ul>
+
+<h2 id="la-gestion-des-branches-un-pré-requis-pour-réussir">La gestion des branches, un pré-requis pour réussir</h2>
+
+<p>Pour commencer, il faut choisir un gestionnaire de sources facilitant cette pratique. À ces fins, je ne peux que recommander un outil tel que Git qui allège la gestion d’une multitude de branches.</p>
+
+<p>Le procédé de gestion <a href="https://docs.gitlab.com/ee/workflow/gitlab_flow.html">GitLab Flow</a>, basé pour cette partie sur celui de GitHub, utilise des branches de fonctionnalités.</p>
+
+<p><a href="feature_branches1.png"><img src="feature_branches1.png" alt="GitLab Flow" />
+</a></p>
+
+<p>Ce sont ces branches qui doivent être revues avant d’être intégrées à la branche master.</p>
+
+<h2 id="workflow">Workflow</h2>
+
+<p>Avec le fonctionnement en feature branches et merge request (ou pull request sur GitHub et d’autres), la revue du code se fait plus facilement car toutes les remontées, échanges et questions sont localisées au même endroit.
+Il est également possible d’inclure les remontées automatiques d’outils de la plateforme d’intégration continue.</p>
+
+<p>Lors de la création de la merge request, il est important que l’on retrouve le n° de la fiche d’évolution, correctif, etc. dans le nom de la branche. Le titre ou la description de la merge request doit être assez explicite pour que le relecteur puisse se placer dans le contexte.</p>
+
+<p>Une checklist peut dans un premier temps permettre de ne rien oublier. Cette checklist, <strong>constituée par l&rsquo;équipe</strong>, doit être vivante et évoluer avec le temps :</p>
+
+<ul>
+<li>si elle n’est pas utilisée, débarrassez-vous en
+
+<ul>
+<li>si des items ne sont plus d’actualité, retirez-les</li>
+<li>essayez de garder la liste courte et priorisée</li>
+</ul></li>
+</ul>
+
+<p>💡 Quand c’est possible, il peut être intéressant de transposer certaines règles sur SonarQube ou tout autre outil d’analyse du code et par conséquent retirer la règle de la checklist.</p>
+
+<h2 id="attention">Attention ⚠</h2>
+
+<p>Il est important que la phase de revue ne soit pas un goulot d’étranglement : lorsqu’un développement est soumis à revue, un autre développeur doit effectuer la revue au plus tôt. Il ne s’arrête pas dans son propre développement pour ne pas le perturber, <strong>mais n’en reprend pas d’autre tant qu’il y a un développement à revoir</strong>.
+On évite ainsi que de trop nombreux développements soient en attente, en bloquent d’autres, et amènent à résoudre trop de conflits.</p>
+
+<p>Si cette dernière recommandation n’est pas suivie, une situation désagréable se produit souvent en fin de sprint : des fonctionnalités ne sont pas livrées car elles ont été bloquées trop longtemps.</p>
+
+<p>Privilégiez la livraison de fonctionnalités pour avoir un retour plus rapide.</p>
+
+<h2 id="le-retour-sur-investissement-est-considérable">Le retour sur investissement est considérable</h2>
+
+<p>Certes, effectuer une revue de code peut s’avérer coûteuse en temps, mais c’est rentable :</p>
+
+<ul>
+<li>partage des connaissances fonctionnelles et techniques
+
+<ul>
+<li>code plus homogène</li>
+<li>des bugs corrigés avant même qu’ils soient livrés</li>
+<li><a href="https://www.owasp.org/index.php/Code_Review_Introduction">réduire les failles de sécurité</a></li>
+</ul></li>
+</ul>
+
+<p>À long terme, le temps passé est rapidement amorti car revenir sur du code sera plus facile.
+À court terme, cela permet de corriger efficacement les bugs, identifier et anticiper des failles, etc. mais aussi être force de proposition pour proposer de nouveaux développements.</p>
+
+<p>L’ensemble de l’équipe s’approprie l’application.</p>
+
+<h2 id="comment-effectuer-une-revue-de-code">Comment effectuer une revue de code ?</h2>
+
+<p>Dans un premier temps, je conseille d’effectuer la revue de code en lisant la fiche à l’origine du besoin pour connaître la raison du développement. Il est très intéressant d’imaginer comment vous, vous auriez effectué ce développement, notamment pour s’améliorer, ou proposer votre idée du développement. Il est plus facile de voir des failles, des oublis ou même de vous faire penser à de nouvelles choses en procédant ainsi.</p>
+
+<p>Dans un second temps, je conseille de lire les changements et de comprendre les raisons qui ont poussé à opter pour telle ou telle stratégie, sans aide ou informations supplémentaires de la part du développeur. <strong>Si vous ne comprenez pas le code, c’est qu’il n’est pas assez clair ou logique</strong>.</p>
+
+<p>Il peut être intéressant d’échanger avec le développeur directement pour lui faire des retours mais, pour ma part, je préfère effectuer la revue de code principalement sur la merge request pour plusieurs raisons :</p>
+
+<ul>
+<li>laisser une trace, pour que ce ne soit pas oublié lors de la correction (GitLab permet de marquer un retour comme “fait”)
+
+<ul>
+<li>être vu par d’autres membres de l’équipe qui pourraient continuer la revue de code, et éviter ainsi de les priver de discussions importantes</li>
+<li>ouvrir un fil d’échanges</li>
+</ul></li>
+</ul>
+
+<p>Si une ligne vous semble étrange ou que vous ne la comprenez-pas, n’hésitez pas à questionner l’auteur. La communication est la clé du succès d’une équipe.</p>
+
+<h2 id="environnement-de-revue">Environnement de revue</h2>
+
+<p>Lors de mes derniers projets, j’ai eu l’occasion de mettre en place un environnement de revue, sur lequel sont déployées les différentes branches fonctionnelles. L’application ainsi déployée correspond à la nouvelle fonctionnalité développée et/ou au bug corrigé, facilitant son test.
+Cet environnement peut par conséquent être accessible par un point d’entrée différent pour chaque branche fonctionnelle.
+<em>Exemple : la branche “user-management” est déployée sur <a href="https://user-management.review.myapp.com">https://user-management.review.myapp.com</a> et GitLab en fait mention sur la merge request</em></p>
+
+<p>Cet environnement de revue est largement bénéfique à l’équipe : il permet de gagner un temps considérable. Le relecteur ne perd pas son temps à changer son espace de travail, à compiler, déployer, etc. L’environnement est systématiquement créé de la même façon.</p>
+
+<p>💡 Lors de la création de l’environnement, il est agréable et utile d’y avoir des données pré-initialisées. Avec Liquibase, il est possible de définir un contexte “review” qui permet de jouer des scripts pour ces environnements spécifiquement.</p>
+
+<p>Je recommande l’utilisation de Docker, avec éventuellement Kubernetes, idéal pour automatiser le déploiement d’un environnement rapidement et de façon identique.</p>
+
+<p>Et vous, avez-vous mis en place un système de revue de code sur votre projet ? Avez-vous constaté une amélioration flagrante de la qualité de l’application ?</p>
+
+<h2 id="quelques-liens">Quelques liens</h2>
+
+<p><a href="https://gitlab.com/help/topics/autodevops/index.md">Auto DevOps</a>
+<a href="https://blog.talanlabs.com/de-la-qualite-en-restant-productif/">Livrer de la qualité tout en restant productif</a></p>
+
+<p><a href="approved.png"><img src="approved.png" alt="Testé et approuvé TalanLabs" />
+</a></p>
+<div class="separator separator-danger"><img src='/img/talan_star_small.png'
+                                                                 alt="Etoile Talan"/></div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 text-center right-column">
+                <h3 class="social-title"><i class="fas fa-calendar-alt"></i> Date</h3>
+                <time class="f6 mv4 dib tracked" datetime='2018-05-07T08:24:59Z'>
+                    Publié le 7 mai 2018
+                </time>
+
+                <h3 class="social-title"><i class="fas fa-pen"></i> Auteur</h3>
+                <div class="author">
+    <div class="avatar avatar-danger">
+        
+        <img alt="Avatar Nicolas POSTE" src='/img/nicolas_poste.jpg'>
+        
+    </div>
+    <div class="description text-center">
+        <h3 class="big-text">
+            
+            Nicolas POSTE
+            
+        </h3>
+        <p class="small-text">Tech Lead</p>
+    </div>
+    <div class="social-buttons">
+        
+        
+        <a href="https://www.linkedin.com/in/nicolas-poste" target="_blank" class="btn btn-social btn-simple"><i class="fab fa-linkedin"></i></a>
+        
+        
+    </div>
+</div>
+
+
+                <h3 class="social-title"><i class="fas fa-flask"></i> Lab</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/categories/lab-x'>Lab X</a></div>
+
+
+                <h3 class="social-title"><i class="fas fa-hashtag"></i> Tags</h3>
+                <div class="article-tags">
+    
+    <a class="badge badge-light" href='/tags/integration-continue'>#Intégration Continue</a>
+    <a class="badge badge-light" href='/tags/revue-de-code'>#Revue de code</a></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-comments"></i> Commentaires</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "labs-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="container">
+        <h3 class="social-title"><i class="fas fa-forward"></i> Vous aimerez peut-être...</h3>
+        <div class="card-deck">
+        
+            <a href="/de-la-qualite-en-restant-productif/" class="card text-center">
+    
+    
+    
+    <div class="ribbon red"><span>Lab X</span></div>
+    
+    
+
+    
+    
+
+    <div class="card-header">
+        <h2 class="card-title">Livrer de la qualité tout en restant productif</h2>
+        <span class="card-subtitle mb-2 text-muted">
+            <strong>Nicolas POSTE</strong>,
+            <time class="post-date" datetime='2018-04-25T14:39:01Z'>
+                le 25 avril 2018
+            </time>
+        </span>
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">Vous êtes CTO ou développeur et soucieux de livrer de la qualité tout en restant productif ?</p>
+    </div>
+
+    <div class="card-footer">
+        <div class="article-tags tags-margin">
+    
+    <span class="badge badge-light">DevOps</span>
+    <span class="badge badge-light">Intégration Continue</span></div>
+
+        <div class="btn offer-link"><strong>Lire la suite</strong> <i class="fas fa-chevron-right"></i></div>
+    </div>
+</a>
+
+        
+        </div>
+        
+    </div>
+</div>
+
+</div><footer class="footer footer-big footer-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Les Labs de Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href='/categories/lab-0'><i class="fas fa-flask"></i> Lab Agilité</a></li>
+                            <li><a href='/categories/lab-k'><i class="fas fa-flask"></i> Lab Blockchain</a></li>
+                            <li><a href='/categories/lab-v'><i class="fas fa-flask"></i> Lab DevOps</a></li>
+                            <li><a href='/categories/lab-9'><i class="fas fa-flask"></i> Lab Bootcamp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Talan Labs</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/TalanLabs" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talanlabs/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://talan.com/metiers/labs/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                            <li><a href="https://www.welcometothejungle.co/fr/companies/talanlabs/" target="_blank"><i class="fas fa-briefcase"></i> Welcome to the Jungle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="info">
+                    <h5 class="title">Le groupe Talan</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/talan_fr" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/talan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/talan/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://talan.com/" target="_blank"><i class="fas fa-link"></i> Site web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">© 2019 - Le Blog des Labs de Talan</div>
+    </div>
+</footer>
+</body>
+
+
+<script type="text/javascript" src='/js/jquery.min.js'></script>
+<script type="text/javascript" src='/js/bootstrap.min.js'></script>
+
+
+<script type="text/javascript" src='/js/modernizr.js'></script>
+
+<script type="text/javascript" src='/js/fontawesome.min.js'></script>
+
+
+<script type="text/javascript" src='/js/gaia.js'></script>
+
+<script type="text/javascript" src='/js/custom.js'></script>
+</html>
